@@ -1,0 +1,8 @@
+ERROR STOP 
+Error termination. Backtrace:
+#0  0x7f4a14b277b5 in ???
+#1  0x55db3118fda8 in ???
+#2  0x55db3117f224 in ???
+#3  0x7f4a14147554 in ???
+#4  0x55db3117f2c8 in ???
+abnormal termination of xtb

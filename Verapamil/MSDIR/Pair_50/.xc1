@@ -1,0 +1,5 @@
+$scc
+ temp=5000.00         
+$constrain
+   force constant=0.0500          
+   distance: 4, 12,  5.00000

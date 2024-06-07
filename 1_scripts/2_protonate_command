@@ -1,0 +1,7 @@
+#This command should be run in command line from the directory of the drug.
+#Remember to substitute the drug_name with the name of your coordinate file.
+
+$ crest <drug_name>.xyz --protonate
+
+#after running, choose the top configuration coordinates in the protonated.xyz (=the most stable one)
+#Copy+paste into a new file and name it <drug_name>H.xyz 

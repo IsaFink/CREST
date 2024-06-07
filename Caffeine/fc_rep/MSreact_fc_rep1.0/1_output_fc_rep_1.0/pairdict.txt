@@ -1,0 +1,1920 @@
+23:
+--------
+    Exclude:
+        False
+--------
+    bonds:
+        <rdkit.Chem._GetBondsIterator object at 0x7f167ce80230>
+--------
+    charge0:
+        0.38906807
+--------
+    charge1:
+        0.61093194
+--------
+    charges:
+        [-0.01266664, 0.069109, -0.12317016, -0.13759232, 0.12017688, 0.00935733, 0.25079484, -0.28920965, 0.01114383, -0.0702289, 0.31063684, -0.29848938, -0.02265462, -0.06974304, 0.09328866, 0.11934997, 0.11998708, 0.10160408, 0.11676845, 0.12535657, 0.1264458, 0.11338303, 0.11307551, 0.12268672, 0.10059013]
+--------
+    f_charge:
+        ./MSDIR/Pair_23/charges
+--------
+    f_coord:
+        ./p23/pair.xyz
+--------
+    f_mass1:
+        ./p23f1/mass
+--------
+    f_mass2:
+        ./p23f2/mass
+--------
+    f_xtb_rxn:
+        ./p23/xtb_rxn/O_Output_21925143.out
+--------
+    fragment1_ids:
+        [(0, 1, 14, 15, 16)]
+--------
+    fragment2_ids:
+        [(2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 17, 18, 19, 20, 21, 22, 23, 24)]
+--------
+    mass0:
+        29.04126136
+--------
+    mass1:
+        166.15759677
+--------
+    molecule:
+        <rdkit.Chem.rdchem.Mol object at 0x7f16856ceab0>
+--------
+    rate_const:
+        1.2913744638199088e-104
+--------
+    rmsd_drug_fragments:
+        1.452
+--------
+    transition_energy:
+        141.65099999999998
+--------
+    transition_path:
+        [-4.35, 1.258, 9.906, 20.618, 34.242, 50.558, 108.374, 104.471, 107.819, 115.601, 130.832, 133.466, 137.301, 64.459, 56.103, 48.957, 42.672, 38.023, 34.657, 30.85, 27.186, 25.866, 25.399, 24.536]
+--------
+    xtb_path_coords:
+        ./p23/xtb_rxn/xtbpath.xyz
+--------
+54:
+--------
+    Exclude:
+        False
+--------
+    bonds:
+        <rdkit.Chem._GetBondsIterator object at 0x7f167c951370>
+--------
+    charge0:
+        0.94807182
+--------
+    charge1:
+        0.05192819
+--------
+    charges:
+        [-0.0103792, 0.07784051, -0.00681599, -0.03562769, 0.13220498, -0.05634768, 0.30098227, -0.34020287, -0.14808538, -0.0285789, 0.02811117, -0.05003735, -0.00680434, -0.07279838, 0.08032491, 0.06987243, 0.11498058, 0.09244345, 0.08012858, 0.09223648, 0.07815359, 0.09854577, 0.12320931, 0.15129012, 0.23535364]
+--------
+    f_charge:
+        ./MSDIR/Pair_54/charges
+--------
+    f_coord:
+        ./p54/pair.xyz
+--------
+    f_mass1:
+        ./p54f1/mass
+--------
+    f_mass2:
+        ./p54f2/mass
+--------
+    f_xtb_rxn:
+        ./p54/xtb_rxn/O_Output_21925144.out
+--------
+    fragment1_ids:
+        [(0, 1, 2, 3, 4, 5, 6, 7, 12, 13, 14, 15, 16, 17, 21, 22, 23, 24)]
+--------
+    fragment2_ids:
+        [(8, 9, 10, 11, 18, 19, 20)]
+--------
+    mass0:
+        138.14745595
+--------
+    mass1:
+        57.05140218
+--------
+    molecule:
+        <rdkit.Chem.rdchem.Mol object at 0x7f16856cf060>
+--------
+    rate_const:
+        5.839137064392796e-72
+--------
+    rmsd_drug_fragments:
+        2.315
+--------
+    transition_energy:
+        97.126
+--------
+    transition_path:
+        [-5.202, -0.415, 6.856, 13.507, 22.51, 30.457, 42.917, 58.679, 74.39, 86.678, 91.924, 89.972, 85.879, 79.259, 72.298, 66.77, 63.042, 59.309, 58.817]
+--------
+    xtb_path_coords:
+        ./p54/xtb_rxn/xtbpath.xyz
+--------
+55:
+--------
+    Exclude:
+        False
+--------
+    bonds:
+        <rdkit.Chem._GetBondsIterator object at 0x7f167c8b4ad0>
+--------
+    charge0:
+        0.9363279500000001
+--------
+    charge1:
+        0.06367206000000004
+--------
+    charges:
+        [-0.08168819, -0.01622525, 0.05479737, -0.03775366, -0.03636858, 0.2593297, 0.19357472, -0.30434912, -0.16013995, -0.04160024, 0.22391098, -0.2243266, -0.14348438, -0.01352361, 0.09158801, 0.09300004, 0.12579269, 0.10823761, 0.11152573, 0.09495212, 0.05935002, 0.09655941, 0.10000484, 0.21293795, 0.2338984]
+--------
+    f_charge:
+        ./MSDIR/Pair_55/charges
+--------
+    f_coord:
+        ./p55/pair.xyz
+--------
+    f_mass1:
+        ./p55f1/mass
+--------
+    f_mass2:
+        ./p55f2/mass
+--------
+    f_xtb_rxn:
+        ./p55/xtb_rxn/O_Output_21925145.out
+--------
+    fragment1_ids:
+        [(0, 1, 2, 3, 4, 5, 6, 7, 12, 13, 14, 15, 16, 17, 21, 22, 23, 24)]
+--------
+    fragment2_ids:
+        [(8, 9, 10, 11, 18, 19, 20)]
+--------
+    mass0:
+        138.14745595
+--------
+    mass1:
+        57.05140218
+--------
+    molecule:
+        <rdkit.Chem.rdchem.Mol object at 0x7f16856cedc0>
+--------
+    rate_const:
+        9.974890073883113e-66
+--------
+    rmsd_drug_fragments:
+        2.140
+--------
+    transition_energy:
+        88.62800000000001
+--------
+    transition_path:
+        [-5.698, -2.109, 3.196, 10.471, 19.503, 31.991, 48.612, 67.867, 79.6, 82.697, 82.93, 82.718, 80.9, 78.076, 75.633, 72.848, 69.744, 67.124, 64.389, 62.149, 60.653, 59.53, 59.417]
+--------
+    xtb_path_coords:
+        ./p55/xtb_rxn/xtbpath.xyz
+--------
+61:
+--------
+    Exclude:
+        False
+--------
+    bonds:
+        <rdkit.Chem._GetBondsIterator object at 0x7f167ce82f00>
+--------
+    charge0:
+        0.7227342300000001
+--------
+    charge1:
+        0.27726579
+--------
+    charges:
+        [-0.08208569, 0.05195775, 0.09730938, -0.20869409, 0.13345297, -0.00687857, 0.27377333, -0.33026709, -0.06859767, -0.06223961, 0.31688054, -0.33061178, -0.01844231, -0.07281371, 0.11002565, 0.1071315, 0.12565712, 0.10960611, 0.12265757, 0.11527638, 0.11566937, 0.11139562, 0.1111366, 0.12754728, 0.15115337]
+--------
+    f_charge:
+        ./MSDIR/Pair_61/charges
+--------
+    f_coord:
+        ./p61/pair.xyz
+--------
+    f_mass1:
+        ./p61f1/mass
+--------
+    f_mass2:
+        ./p61f2/mass
+--------
+    f_xtb_rxn:
+        ./p61/xtb_rxn/O_Output_21925146.out
+--------
+    fragment1_ids:
+        [(0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 14, 15, 16, 17, 18, 19, 20, 24)]
+--------
+    fragment2_ids:
+        [(13, 21, 22, 23)]
+--------
+    mass0:
+        180.16429998
+--------
+    mass1:
+        15.03455815
+--------
+    molecule:
+        <rdkit.Chem.rdchem.Mol object at 0x7f16856ceb90>
+--------
+    rate_const:
+        3.3605619395325798e-49
+--------
+    rmsd_drug_fragments:
+        2.835
+--------
+    transition_energy:
+        66.093
+--------
+    transition_path:
+        [-5.74, -2.24, 3.695, 10.837, 19.245, 28.571, 39.699, 59.728, 60.353, 60.187, 59.023, 57.903, 56.025, 53.495, 50.484, 48.396, 46.301, 44.289, 42.509, 40.346, 38.835, 37.911, 37.558, 37.603]
+--------
+    xtb_path_coords:
+        ./p61/xtb_rxn/xtbpath.xyz
+--------
+62:
+--------
+    Exclude:
+        False
+--------
+    bonds:
+        <rdkit.Chem._GetBondsIterator object at 0x7f167c8b4110>
+--------
+    charge0:
+        0.63020909
+--------
+    charge1:
+        0.36979090000000003
+--------
+    charges:
+        [0.11793984, 0.01932134, 0.05629309, -0.06046661, 0.11387847, 0.03061734, -0.1103158, -0.38806474, 0.01509197, -0.07136239, 0.30841803, -0.35893637, -0.04769108, -0.06973097, 0.12288791, 0.07006345, 0.31931789, 0.11241368, 0.10651238, 0.10226854, 0.10028434, 0.08089577, 0.08120341, 0.12452573, 0.22463477]
+--------
+    f_charge:
+        ./MSDIR/Pair_62/charges
+--------
+    f_coord:
+        ./p62/pair.xyz
+--------
+    f_mass1:
+        ./p62f1/mass
+--------
+    f_mass2:
+        ./p62f2/mass
+--------
+    f_xtb_rxn:
+        ./p62/xtb_rxn/O_Output_21925147.out
+--------
+    fragment1_ids:
+        [(0, 14, 15, 16)]
+--------
+    fragment2_ids:
+        [(1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 17, 18, 19, 20, 21, 22, 23, 24)]
+--------
+    mass0:
+        15.03455815
+--------
+    mass1:
+        180.16429998
+--------
+    molecule:
+        <rdkit.Chem.rdchem.Mol object at 0x7f16856cf1b0>
+--------
+    rate_const:
+        5.75579006052621e-40
+--------
+    rmsd_drug_fragments:
+        2.238
+--------
+    transition_energy:
+        53.503
+--------
+    transition_path:
+        [-4.721, 1.135, 10.055, 21.551, 35.025, 48.632, 48.782, 45.783, 44.746, 43.579, 41.488, 39.195, 38.789, 38.899, 38.179, 37.539, 37.213, 36.603, 35.81, 34.647, 32.932, 30.878, 29.921]
+--------
+    xtb_path_coords:
+        ./p62/xtb_rxn/xtbpath.xyz
+--------
+63:
+--------
+    Exclude:
+        False
+--------
+    bonds:
+        <rdkit.Chem._GetBondsIterator object at 0x7f167c952db0>
+--------
+    charge0:
+        0.22355373
+--------
+    charge1:
+        0.77644626
+--------
+    charges:
+        [-0.08382458, 0.04722177, 0.04948808, -0.05905448, 0.10383433, -0.01226403, 0.21639779, -0.14033268, -0.0283596, -0.05334076, 0.11966887, -0.25390091, -0.01343291, -0.07227039, 0.10244376, 0.10323433, 0.10170022, 0.11773123, 0.07716007, 0.09525126, 0.0758898, 0.07457504, 0.08277812, 0.1226077, 0.22679796]
+--------
+    f_charge:
+        ./MSDIR/Pair_63/charges
+--------
+    f_coord:
+        ./p63/pair.xyz
+--------
+    f_mass1:
+        ./p63f1/mass
+--------
+    f_mass2:
+        ./p63f2/mass
+--------
+    f_xtb_rxn:
+        ./p63/xtb_rxn/O_Output_21925148.out
+--------
+    fragment1_ids:
+        [(0, 14, 15, 16)]
+--------
+    fragment2_ids:
+        [(1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 17, 18, 19, 20, 21, 22, 23, 24)]
+--------
+    mass0:
+        15.03455815
+--------
+    mass1:
+        180.16429998
+--------
+    molecule:
+        <rdkit.Chem.rdchem.Mol object at 0x7f16856cee30>
+--------
+    rate_const:
+        2.929583908827996e-34
+--------
+    rmsd_drug_fragments:
+        1.580
+--------
+    transition_energy:
+        45.722
+--------
+    transition_path:
+        [-6.199, -4.687, -1.885, 2.198, 7.411, 13.667, 28.21, 39.523, 38.931, 37.978, 37.319, 36.562, 35.692, 35.077, 34.388, 33.624, 32.869, 32.275, 31.518, 30.947, 30.628, 30.113, 29.877, 29.84]
+--------
+    xtb_path_coords:
+        ./p63/xtb_rxn/xtbpath.xyz
+--------
+64:
+--------
+    Exclude:
+        False
+--------
+    bonds:
+        <rdkit.Chem._GetBondsIterator object at 0x7f167ce83740>
+--------
+    charge0:
+        0.23661985
+--------
+    charge1:
+        0.76338014
+--------
+    charges:
+        [-0.08987185, 0.06506508, 0.02787435, -0.06896069, 0.09850261, -0.02670602, 0.26701294, -0.38005994, -0.18266168, -0.03428983, 0.21404679, -0.10604021, -0.03676226, -0.0751062, 0.09970227, 0.09757316, 0.12921627, 0.1113936, 0.23623518, 0.09635882, 0.05764318, 0.08591097, 0.08606257, 0.11012973, 0.21773115]
+--------
+    f_charge:
+        ./MSDIR/Pair_64/charges
+--------
+    f_coord:
+        ./p64/pair.xyz
+--------
+    f_mass1:
+        ./p64f1/mass
+--------
+    f_mass2:
+        ./p64f2/mass
+--------
+    f_xtb_rxn:
+        ./p64/xtb_rxn/O_Output_21925149.out
+--------
+    fragment1_ids:
+        [(0, 14, 15, 16)]
+--------
+    fragment2_ids:
+        [(1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 17, 18, 19, 20, 21, 22, 23, 24)]
+--------
+    mass0:
+        15.03455815
+--------
+    mass1:
+        180.16429998
+--------
+    molecule:
+        <rdkit.Chem.rdchem.Mol object at 0x7f16856cf5a0>
+--------
+    rate_const:
+        7.59950243207292e-37
+--------
+    rmsd_drug_fragments:
+        1.794
+--------
+    transition_energy:
+        49.248000000000005
+--------
+    transition_path:
+        [-5.999, -3.54, 1.185, 8.289, 17.723, 41.837, 42.108, 42.509, 42.515, 42.942, 43.249, 42.995, 42.022, 42.334, 39.401, 37.225, 35.052, 33.162, 32.062, 31.771, 30.698, 30.777, 30.483, 30.263]
+--------
+    xtb_path_coords:
+        ./p64/xtb_rxn/xtbpath.xyz
+--------
+65:
+--------
+    Exclude:
+        False
+--------
+    bonds:
+        <rdkit.Chem._GetBondsIterator object at 0x7f167c89f890>
+--------
+    charge0:
+        0.26008887999999997
+--------
+    charge1:
+        0.73991114
+--------
+    charges:
+        [-0.09533494, 0.08709077, 0.06741266, -0.08065019, 0.14168436, 0.00491913, 0.28331853, -0.38079556, -0.1642435, -0.03379379, 0.06139273, -0.02856426, -0.15730992, -0.05357073, 0.10749906, 0.10170957, 0.14621519, 0.11958245, 0.1168358, 0.1171223, 0.11814661, 0.09623241, 0.08222039, 0.12129762, 0.22158333]
+--------
+    f_charge:
+        ./MSDIR/Pair_65/charges
+--------
+    f_coord:
+        ./p65/pair.xyz
+--------
+    f_mass1:
+        ./p65f1/mass
+--------
+    f_mass2:
+        ./p65f2/mass
+--------
+    f_xtb_rxn:
+        ./p65/xtb_rxn/O_Output_21925150.out
+--------
+    fragment1_ids:
+        [(0, 14, 15, 16)]
+--------
+    fragment2_ids:
+        [(1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 17, 18, 19, 20, 21, 22, 23, 24)]
+--------
+    mass0:
+        15.03455815
+--------
+    mass1:
+        180.16429998
+--------
+    molecule:
+        <rdkit.Chem.rdchem.Mol object at 0x7f16856cf3e0>
+--------
+    rate_const:
+        3.161054059734598e-32
+--------
+    rmsd_drug_fragments:
+        1.326
+--------
+    transition_energy:
+        42.95
+--------
+    transition_path:
+        [-6.167, -4.713, -1.947, 2.029, 7.327, 13.937, 36.783, 36.449, 35.983, 35.421, 34.85, 34.36, 33.923, 33.386, 32.894, 32.559, 32.108, 31.485, 31.215, 30.758, 30.594]
+--------
+    xtb_path_coords:
+        ./p65/xtb_rxn/xtbpath.xyz
+--------
+66:
+--------
+    Exclude:
+        False
+--------
+    bonds:
+        <rdkit.Chem._GetBondsIterator object at 0x7f167c849c70>
+--------
+    charge0:
+        0.8103807599999999
+--------
+    charge1:
+        0.18961926
+--------
+    charges:
+        [-0.08368928, 0.0584757, 0.07933172, -0.09125299, 0.15537324, -0.02080304, 0.25178164, -0.11961933, -0.14047243, -0.03186478, 0.31312235, -0.25678958, -0.21189279, -0.0417239, 0.10187504, 0.10260144, 0.10079941, 0.1137008, 0.09277069, 0.09042125, 0.08707275, 0.0679752, 0.06092297, 0.10244499, 0.21943895]
+--------
+    f_charge:
+        ./MSDIR/Pair_66/charges
+--------
+    f_coord:
+        ./p66/pair.xyz
+--------
+    f_mass1:
+        ./p66f1/mass
+--------
+    f_mass2:
+        ./p66f2/mass
+--------
+    f_xtb_rxn:
+        ./p66/xtb_rxn/O_Output_21925151.out
+--------
+    fragment1_ids:
+        [(0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 14, 15, 16, 17, 18, 19, 20, 24)]
+--------
+    fragment2_ids:
+        [(13, 21, 22, 23)]
+--------
+    mass0:
+        180.16429998
+--------
+    mass1:
+        15.03455815
+--------
+    molecule:
+        <rdkit.Chem.rdchem.Mol object at 0x7f16856cf610>
+--------
+    rate_const:
+        2.684940511133525e-43
+--------
+    rmsd_drug_fragments:
+        2.099
+--------
+    transition_energy:
+        58.045
+--------
+    transition_path:
+        [-5.589, -2.387, 3.115, 10.62, 19.721, 31.055, 51.64, 52.456, 51.859, 50.237, 48.914, 48.809, 48.523, 48.128, 47.042, 45.819, 44.243, 42.401, 40.65, 39.419, 38.625, 38.277, 38.145]
+--------
+    xtb_path_coords:
+        ./p66/xtb_rxn/xtbpath.xyz
+--------
+67:
+--------
+    Error:
+        Mass of fragment is less than 3 g/mol
+--------
+    Exclude:
+        True
+--------
+    f_charge:
+        ./MSDIR/Pair_67/charges
+--------
+    f_coord:
+        ./p67/pair.xyz
+--------
+    f_mass1:
+        ./p67f1/mass
+--------
+    f_mass2:
+        ./p67f2/mass
+--------
+    f_xtb_rxn:
+        ./p67/xtb_rxn/O_Output_21925152.out
+--------
+    mass0:
+        194.19091738
+--------
+    mass1:
+        1.00794075
+--------
+    molecule:
+        <rdkit.Chem.rdchem.Mol object at 0x7f16856ceea0>
+--------
+    xtb_path_coords:
+        ./p67/xtb_rxn/xtbpath.xyz
+--------
+68:
+--------
+    Error:
+        Mass of fragment is less than 3 g/mol
+--------
+    Exclude:
+        True
+--------
+    f_charge:
+        ./MSDIR/Pair_68/charges
+--------
+    f_coord:
+        ./p68/pair.xyz
+--------
+    f_mass1:
+        ./p68f1/mass
+--------
+    f_mass2:
+        ./p68f2/mass
+--------
+    f_xtb_rxn:
+        ./p68/xtb_rxn/O_Output_21925153.out
+--------
+    mass0:
+        194.19091738
+--------
+    mass1:
+        1.00794075
+--------
+    molecule:
+        <rdkit.Chem.rdchem.Mol object at 0x7f16856ce960>
+--------
+    xtb_path_coords:
+        ./p68/xtb_rxn/xtbpath.xyz
+--------
+69:
+--------
+    Error:
+        Mass of fragment is less than 3 g/mol
+--------
+    Exclude:
+        True
+--------
+    f_charge:
+        ./MSDIR/Pair_69/charges
+--------
+    f_coord:
+        ./p69/pair.xyz
+--------
+    f_mass1:
+        ./p69f1/mass
+--------
+    f_mass2:
+        ./p69f2/mass
+--------
+    f_xtb_rxn:
+        ./p69/xtb_rxn/O_Output_21925154.out
+--------
+    mass0:
+        194.19091738
+--------
+    mass1:
+        1.00794075
+--------
+    molecule:
+        <rdkit.Chem.rdchem.Mol object at 0x7f16856cf300>
+--------
+    xtb_path_coords:
+        ./p69/xtb_rxn/xtbpath.xyz
+--------
+70:
+--------
+    Error:
+        Mass of fragment is less than 3 g/mol
+--------
+    Exclude:
+        True
+--------
+    f_charge:
+        ./MSDIR/Pair_70/charges
+--------
+    f_coord:
+        ./p70/pair.xyz
+--------
+    f_mass1:
+        ./p70f1/mass
+--------
+    f_mass2:
+        ./p70f2/mass
+--------
+    f_xtb_rxn:
+        ./p70/xtb_rxn/O_Output_21925155.out
+--------
+    mass0:
+        194.19091738
+--------
+    mass1:
+        1.00794075
+--------
+    molecule:
+        <rdkit.Chem.rdchem.Mol object at 0x7f16856cf450>
+--------
+    xtb_path_coords:
+        ./p70/xtb_rxn/xtbpath.xyz
+--------
+74:
+--------
+    Exclude:
+        False
+--------
+    bonds:
+        <rdkit.Chem._GetBondsIterator object at 0x7f167c8491c0>
+--------
+    charge0:
+        0.90958915
+--------
+    charge1:
+        0.09041084000000002
+--------
+    charges:
+        [-0.09383512, 0.08911608, 0.05634587, -0.06421334, 0.1230153, -0.01757463, 0.29892754, -0.34431553, -0.24621792, -0.06654649, 0.33753743, -0.33764821, -0.07065133, -0.06636967, 0.11046105, 0.10582704, 0.14029731, 0.12492305, 0.13521025, 0.13200205, 0.13596295, 0.08017501, 0.08121873, 0.12713832, 0.22921425]
+--------
+    f_charge:
+        ./MSDIR/Pair_74/charges
+--------
+    f_coord:
+        ./p74/pair.xyz
+--------
+    f_mass1:
+        ./p74f1/mass
+--------
+    f_mass2:
+        ./p74f2/mass
+--------
+    f_xtb_rxn:
+        ./p74/xtb_rxn/O_Output_21925156.out
+--------
+    fragment1_ids:
+        [(0, 1, 2, 3, 4, 5, 6, 7, 10, 11, 12, 13, 14, 15, 16, 17, 21, 22, 23, 24)]
+--------
+    fragment2_ids:
+        [(8, 9, 18, 19, 20)]
+--------
+    mass0:
+        166.15759677
+--------
+    mass1:
+        29.04126136
+--------
+    molecule:
+        <rdkit.Chem.rdchem.Mol object at 0x7f16856ceb20>
+--------
+    rate_const:
+        7.539400962883385e-116
+--------
+    rmsd_drug_fragments:
+        1.627
+--------
+    transition_energy:
+        156.968
+--------
+    transition_path:
+        [-5.414, -2.335, 2.677, 9.445, 17.42, 26.77, 37.797, 51.956, 70.994, 90.09, 106.848, 123.386, 132.0, 151.554, 121.045, 128.072, 106.183, 88.85, 78.199, 69.707, 64.054, 62.592, 61.983]
+--------
+    xtb_path_coords:
+        ./p74/xtb_rxn/xtbpath.xyz
+--------
+76:
+--------
+    Exclude:
+        False
+--------
+    bonds:
+        <rdkit.Chem._GetBondsIterator object at 0x7f167cee9d60>
+--------
+    charge0:
+        0.7811790500000001
+--------
+    charge1:
+        0.21882097
+--------
+    charges:
+        [-0.0956334, 0.08130983, 0.04592673, -0.0620356, 0.1202808, -0.01027855, 0.22087585, -0.23815502, -0.19986282, -0.04156404, 0.40773646, -0.32928947, -0.08083605, -0.07015732, 0.12333548, 0.10670299, 0.11975381, 0.12392867, 0.09210675, 0.07321409, 0.09506417, 0.08176995, 0.08114419, 0.12421604, 0.23044648]
+--------
+    f_charge:
+        ./MSDIR/Pair_76/charges
+--------
+    f_coord:
+        ./p76/pair.xyz
+--------
+    f_mass1:
+        ./p76f1/mass
+--------
+    f_mass2:
+        ./p76f2/mass
+--------
+    f_xtb_rxn:
+        ./p76/xtb_rxn/O_Output_21925157.out
+--------
+    fragment1_ids:
+        [(0, 1, 2, 3, 4, 5, 6, 7, 8, 10, 11, 12, 13, 14, 15, 16, 17, 21, 22, 23, 24)]
+--------
+    fragment2_ids:
+        [(9, 18, 19, 20)]
+--------
+    mass0:
+        180.16429998
+--------
+    mass1:
+        15.03455815
+--------
+    molecule:
+        <rdkit.Chem.rdchem.Mol object at 0x7f16856cec00>
+--------
+    rate_const:
+        8.7550398649786e-49
+--------
+    rmsd_drug_fragments:
+        1.546
+--------
+    transition_energy:
+        65.526
+--------
+    transition_path:
+        [-5.992, -4.404, -1.608, 2.434, 7.791, 14.144, 21.605, 30.493, 42.517, 57.665, 59.246, 59.534, 59.256, 58.551, 57.563, 56.498, 55.741, 55.206, 54.819, 54.417, 54.062, 54.219, 53.985, 53.864]
+--------
+    xtb_path_coords:
+        ./p76/xtb_rxn/xtbpath.xyz
+--------
+79:
+--------
+    Exclude:
+        False
+--------
+    bonds:
+        <rdkit.Chem._GetBondsIterator object at 0x7f167c8f54c0>
+--------
+    charge0:
+        0.7457775900000001
+--------
+    charge1:
+        0.2542224
+--------
+    charges:
+        [-0.09369513, 0.07739866, 0.04713334, -0.05804451, 0.10581044, -0.02352195, 0.25403793, -0.36293395, -0.03009699, -0.02088296, 0.30882346, -0.3502331, -0.04944141, -0.07353145, 0.10794851, 0.1041969, 0.13410238, 0.12357374, 0.01027736, 0.13519163, 0.12963637, 0.08426391, 0.08364872, 0.12740147, 0.22893662]
+--------
+    f_charge:
+        ./MSDIR/Pair_79/charges
+--------
+    f_coord:
+        ./p79/pair.xyz
+--------
+    f_mass1:
+        ./p79f1/mass
+--------
+    f_mass2:
+        ./p79f2/mass
+--------
+    f_xtb_rxn:
+        ./p79/xtb_rxn/O_Output_21925158.out
+--------
+    fragment1_ids:
+        [(0, 1, 2, 3, 4, 5, 6, 7, 8, 10, 11, 12, 13, 14, 15, 16, 17, 21, 22, 23, 24)]
+--------
+    fragment2_ids:
+        [(9, 18, 19, 20)]
+--------
+    mass0:
+        180.16429998
+--------
+    mass1:
+        15.03455815
+--------
+    molecule:
+        <rdkit.Chem.rdchem.Mol object at 0x7f16856cec70>
+--------
+    rate_const:
+        1.7452966426096944e-47
+--------
+    rmsd_drug_fragments:
+        1.509
+--------
+    transition_energy:
+        63.754
+--------
+    transition_path:
+        [-5.385, -2.344, 2.677, 9.602, 18.117, 28.407, 50.843, 55.132, 56.965, 57.871, 58.243, 58.369, 58.049, 57.448, 56.93, 56.469, 56.1, 55.593, 55.258, 55.315, 55.02, 55.035, 54.545, 54.261]
+--------
+    xtb_path_coords:
+        ./p79/xtb_rxn/xtbpath.xyz
+--------
+82:
+--------
+    Error:
+        Mass of fragment is less than 3 g/mol
+--------
+    Exclude:
+        True
+--------
+    f_charge:
+        ./MSDIR/Pair_82/charges
+--------
+    f_coord:
+        ./p82/pair.xyz
+--------
+    f_mass1:
+        ./p82f1/mass
+--------
+    f_mass2:
+        ./p82f2/mass
+--------
+    f_xtb_rxn:
+        ./p82/xtb_rxn/O_Output_21925159.out
+--------
+    mass0:
+        194.19091738
+--------
+    mass1:
+        1.00794075
+--------
+    molecule:
+        <rdkit.Chem.rdchem.Mol object at 0x7f16856ce730>
+--------
+    xtb_path_coords:
+        ./p82/xtb_rxn/xtbpath.xyz
+--------
+83:
+--------
+    Error:
+        Mass of fragment is less than 3 g/mol
+--------
+    Exclude:
+        True
+--------
+    f_charge:
+        ./MSDIR/Pair_83/charges
+--------
+    f_coord:
+        ./p83/pair.xyz
+--------
+    f_mass1:
+        ./p83f1/mass
+--------
+    f_mass2:
+        ./p83f2/mass
+--------
+    f_xtb_rxn:
+        ./p83/xtb_rxn/O_Output_21925160.out
+--------
+    mass0:
+        194.19091738
+--------
+    mass1:
+        1.00794075
+--------
+    molecule:
+        <rdkit.Chem.rdchem.Mol object at 0x7f16856ced50>
+--------
+    xtb_path_coords:
+        ./p83/xtb_rxn/xtbpath.xyz
+--------
+84:
+--------
+    Error:
+        Mass of fragment is less than 3 g/mol
+--------
+    Exclude:
+        True
+--------
+    f_charge:
+        ./MSDIR/Pair_84/charges
+--------
+    f_coord:
+        ./p84/pair.xyz
+--------
+    f_mass1:
+        ./p84f1/mass
+--------
+    f_mass2:
+        ./p84f2/mass
+--------
+    f_xtb_rxn:
+        ./p84/xtb_rxn/O_Output_21925161.out
+--------
+    mass0:
+        194.19091738
+--------
+    mass1:
+        1.00794075
+--------
+    molecule:
+        <rdkit.Chem.rdchem.Mol object at 0x7f16856ce810>
+--------
+    xtb_path_coords:
+        ./p84/xtb_rxn/xtbpath.xyz
+--------
+85:
+--------
+    Error:
+        Mass of fragment is less than 3 g/mol
+--------
+    Exclude:
+        True
+--------
+    f_charge:
+        ./MSDIR/Pair_85/charges
+--------
+    f_coord:
+        ./p85/pair.xyz
+--------
+    f_mass1:
+        ./p85f1/mass
+--------
+    f_mass2:
+        ./p85f2/mass
+--------
+    f_xtb_rxn:
+        ./p85/xtb_rxn/O_Output_21925162.out
+--------
+    mass0:
+        194.19091738
+--------
+    mass1:
+        1.00794075
+--------
+    molecule:
+        <rdkit.Chem.rdchem.Mol object at 0x7f16856cf4c0>
+--------
+    xtb_path_coords:
+        ./p85/xtb_rxn/xtbpath.xyz
+--------
+86:
+--------
+    Error:
+        Mass of fragment is less than 3 g/mol
+--------
+    Exclude:
+        True
+--------
+    f_charge:
+        ./MSDIR/Pair_86/charges
+--------
+    f_coord:
+        ./p86/pair.xyz
+--------
+    f_mass1:
+        ./p86f1/mass
+--------
+    f_mass2:
+        ./p86f2/mass
+--------
+    f_xtb_rxn:
+        ./p86/xtb_rxn/O_Output_21925163.out
+--------
+    mass0:
+        194.19091738
+--------
+    mass1:
+        1.00794075
+--------
+    molecule:
+        <rdkit.Chem.rdchem.Mol object at 0x7f16856cef10>
+--------
+    xtb_path_coords:
+        ./p86/xtb_rxn/xtbpath.xyz
+--------
+87:
+--------
+    Exclude:
+        False
+--------
+    bonds:
+        <rdkit.Chem._GetBondsIterator object at 0x7f167c8b5a30>
+--------
+    charge0:
+        0.9457169999999999
+--------
+    charge1:
+        0.05428299000000003
+--------
+    charges:
+        [-0.09257001, 0.08723241, 0.06387675, -0.0554685, 0.14850822, -0.02083348, 0.27656639, -0.36481383, -0.08329187, -0.05581426, 0.33831139, -0.33311617, -0.25649537, -0.07680073, 0.10735882, 0.1074366, 0.13599812, 0.12494107, 0.11351881, 0.10645635, 0.10637025, 0.12703605, 0.12683079, 0.13371225, 0.23504994]
+--------
+    f_charge:
+        ./MSDIR/Pair_87/charges
+--------
+    f_coord:
+        ./p87/pair.xyz
+--------
+    f_mass1:
+        ./p87f1/mass
+--------
+    f_mass2:
+        ./p87f2/mass
+--------
+    f_xtb_rxn:
+        ./p87/xtb_rxn/O_Output_21925164.out
+--------
+    fragment1_ids:
+        [(0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 14, 15, 16, 17, 18, 19, 20, 24)]
+--------
+    fragment2_ids:
+        [(12, 13, 21, 22, 23)]
+--------
+    mass0:
+        166.15759677
+--------
+    mass1:
+        29.04126136
+--------
+    molecule:
+        <rdkit.Chem.rdchem.Mol object at 0x7f16856cece0>
+--------
+    rate_const:
+        9.392740789018401e-106
+--------
+    rmsd_drug_fragments:
+        2.771
+--------
+    transition_energy:
+        143.203
+--------
+    transition_path:
+        [-5.123, -0.758, 6.397, 15.486, 25.131, 36.25, 80.549, 85.717, 89.893, 91.959, 93.148, 96.802, 95.504, 138.08, 116.198, 86.005, 79.942, 93.142, 88.284, 83.916, 80.945, 79.516, 79.261, 79.996]
+--------
+    xtb_path_coords:
+        ./p87/xtb_rxn/xtbpath.xyz
+--------
+88:
+--------
+    Error:
+        Mass of fragment is less than 3 g/mol
+--------
+    Exclude:
+        True
+--------
+    f_charge:
+        ./MSDIR/Pair_88/charges
+--------
+    f_coord:
+        ./p88/pair.xyz
+--------
+    f_mass1:
+        ./p88f1/mass
+--------
+    f_mass2:
+        ./p88f2/mass
+--------
+    f_xtb_rxn:
+        ./p88/xtb_rxn/O_Output_21925165.out
+--------
+    mass0:
+        194.19091738
+--------
+    mass1:
+        1.00794075
+--------
+    molecule:
+        <rdkit.Chem.rdchem.Mol object at 0x7f16856ce9d0>
+--------
+    xtb_path_coords:
+        ./p88/xtb_rxn/xtbpath.xyz
+--------
+89:
+--------
+    Error:
+        Mass of fragment is less than 3 g/mol
+--------
+    Exclude:
+        True
+--------
+    f_charge:
+        ./MSDIR/Pair_89/charges
+--------
+    f_coord:
+        ./p89/pair.xyz
+--------
+    f_mass1:
+        ./p89f1/mass
+--------
+    f_mass2:
+        ./p89f2/mass
+--------
+    f_xtb_rxn:
+        ./p89/xtb_rxn/O_Output_21925166.out
+--------
+    mass0:
+        194.19091738
+--------
+    mass1:
+        1.00794075
+--------
+    molecule:
+        <rdkit.Chem.rdchem.Mol object at 0x7f16856ceff0>
+--------
+    xtb_path_coords:
+        ./p89/xtb_rxn/xtbpath.xyz
+--------
+90:
+--------
+    Error:
+        Mass of fragment is less than 3 g/mol
+--------
+    Exclude:
+        True
+--------
+    f_charge:
+        ./MSDIR/Pair_90/charges
+--------
+    f_coord:
+        ./p90/pair.xyz
+--------
+    f_mass1:
+        ./p90f1/mass
+--------
+    f_mass2:
+        ./p90f2/mass
+--------
+    f_xtb_rxn:
+        ./p90/xtb_rxn/O_Output_21925167.out
+--------
+    mass0:
+        194.19091738
+--------
+    mass1:
+        1.00794075
+--------
+    molecule:
+        <rdkit.Chem.rdchem.Mol object at 0x7f16856cea40>
+--------
+    xtb_path_coords:
+        ./p90/xtb_rxn/xtbpath.xyz
+--------
+91:
+--------
+    Exclude:
+        False
+--------
+    bonds:
+        <rdkit.Chem._GetBondsIterator object at 0x7f167c8f51c0>
+--------
+    charge0:
+        0.8476676300000001
+--------
+    charge1:
+        0.15233239000000004
+--------
+    charges:
+        [-0.08439235, 0.0659559, 0.07447112, -0.09684366, 0.14298472, -0.04287459, 0.25590817, -0.32221147, -0.02320067, -0.06519346, 0.32859863, -0.11207675, -0.25839792, -0.03208905, 0.11343731, 0.09619096, 0.11132835, 0.10983827, 0.11931832, 0.1021375, 0.10814678, 0.04297037, 0.07082383, 0.08050487, 0.21466484]
+--------
+    f_charge:
+        ./MSDIR/Pair_91/charges
+--------
+    f_coord:
+        ./p91/pair.xyz
+--------
+    f_mass1:
+        ./p91f1/mass
+--------
+    f_mass2:
+        ./p91f2/mass
+--------
+    f_xtb_rxn:
+        ./p91/xtb_rxn/O_Output_21925168.out
+--------
+    fragment1_ids:
+        [(0, 1, 2, 3, 4, 5, 6, 7, 8, 10, 12, 13, 14, 15, 16, 17, 21, 22, 23, 24)]
+--------
+    fragment2_ids:
+        [(9, 11, 18, 19, 20)]
+--------
+    mass0:
+        164.16489506
+--------
+    mass1:
+        31.03396307
+--------
+    molecule:
+        <rdkit.Chem.rdchem.Mol object at 0x7f1685672dc0>
+--------
+    rate_const:
+        6.706365670070294e-105
+--------
+    rmsd_drug_fragments:
+        2.560
+--------
+    transition_energy:
+        142.03900000000002
+--------
+    transition_path:
+        [-5.413, -1.532, 4.739, 14.058, 25.622, 41.953, 63.42, 90.894, 93.957, 96.464, 99.789, 102.78, 128.673, 136.626, 131.485, 126.797, 113.334, 109.824, 107.334, 104.088, 101.092, 99.224, 98.439, 98.991]
+--------
+    xtb_path_coords:
+        ./p91/xtb_rxn/xtbpath.xyz
+--------
+92:
+--------
+    Error:
+        Mass of fragment is less than 3 g/mol
+--------
+    Exclude:
+        True
+--------
+    f_charge:
+        ./MSDIR/Pair_92/charges
+--------
+    f_coord:
+        ./p92/pair.xyz
+--------
+    f_mass1:
+        ./p92f1/mass
+--------
+    f_mass2:
+        ./p92f2/mass
+--------
+    f_xtb_rxn:
+        ./p92/xtb_rxn/O_Output_21925169.out
+--------
+    mass0:
+        194.19091738
+--------
+    mass1:
+        1.00794075
+--------
+    molecule:
+        <rdkit.Chem.rdchem.Mol object at 0x7f16856ce8f0>
+--------
+    xtb_path_coords:
+        ./p92/xtb_rxn/xtbpath.xyz
+--------
+93:
+--------
+    Error:
+        Mass of fragment is less than 3 g/mol
+--------
+    Exclude:
+        True
+--------
+    f_charge:
+        ./MSDIR/Pair_93/charges
+--------
+    f_coord:
+        ./p93/pair.xyz
+--------
+    f_mass1:
+        ./p93f1/mass
+--------
+    f_mass2:
+        ./p93f2/mass
+--------
+    f_xtb_rxn:
+        ./p93/xtb_rxn/O_Output_21925170.out
+--------
+    mass0:
+        194.19091738
+--------
+    mass1:
+        1.00794075
+--------
+    molecule:
+        <rdkit.Chem.rdchem.Mol object at 0x7f1685386ce0>
+--------
+    xtb_path_coords:
+        ./p93/xtb_rxn/xtbpath.xyz
+--------
+94:
+--------
+    Error:
+        Mass of fragment is less than 3 g/mol
+--------
+    Exclude:
+        True
+--------
+    f_charge:
+        ./MSDIR/Pair_94/charges
+--------
+    f_coord:
+        ./p94/pair.xyz
+--------
+    f_mass1:
+        ./p94f1/mass
+--------
+    f_mass2:
+        ./p94f2/mass
+--------
+    f_xtb_rxn:
+        ./p94/xtb_rxn/O_Output_21925171.out
+--------
+    mass0:
+        194.19091738
+--------
+    mass1:
+        1.00794075
+--------
+    molecule:
+        <rdkit.Chem.rdchem.Mol object at 0x7f16853870d0>
+--------
+    xtb_path_coords:
+        ./p94/xtb_rxn/xtbpath.xyz
+--------
+95:
+--------
+    Error:
+        Mass of fragment is less than 3 g/mol
+--------
+    Exclude:
+        True
+--------
+    f_charge:
+        ./MSDIR/Pair_95/charges
+--------
+    f_coord:
+        ./p95/pair.xyz
+--------
+    f_mass1:
+        ./p95f1/mass
+--------
+    f_mass2:
+        ./p95f2/mass
+--------
+    f_xtb_rxn:
+        ./p95/xtb_rxn/O_Output_21925172.out
+--------
+    mass0:
+        194.19091738
+--------
+    mass1:
+        1.00794075
+--------
+    molecule:
+        <rdkit.Chem.rdchem.Mol object at 0x7f1685387610>
+--------
+    xtb_path_coords:
+        ./p95/xtb_rxn/xtbpath.xyz
+--------
+96:
+--------
+    Error:
+        Mass of fragment is less than 3 g/mol
+--------
+    Exclude:
+        True
+--------
+    f_charge:
+        ./MSDIR/Pair_96/charges
+--------
+    f_coord:
+        ./p96/pair.xyz
+--------
+    f_mass1:
+        ./p96f1/mass
+--------
+    f_mass2:
+        ./p96f2/mass
+--------
+    f_xtb_rxn:
+        ./p96/xtb_rxn/O_Output_21925173.out
+--------
+    mass0:
+        194.19091738
+--------
+    mass1:
+        1.00794075
+--------
+    molecule:
+        <rdkit.Chem.rdchem.Mol object at 0x7f1685387530>
+--------
+    xtb_path_coords:
+        ./p96/xtb_rxn/xtbpath.xyz
+--------
+97:
+--------
+    Error:
+        Mass of fragment is less than 3 g/mol
+--------
+    Exclude:
+        True
+--------
+    f_charge:
+        ./MSDIR/Pair_97/charges
+--------
+    f_coord:
+        ./p97/pair.xyz
+--------
+    f_mass1:
+        ./p97f1/mass
+--------
+    f_mass2:
+        ./p97f2/mass
+--------
+    f_xtb_rxn:
+        ./p97/xtb_rxn/O_Output_21925174.out
+--------
+    mass0:
+        194.19091738
+--------
+    mass1:
+        1.00794075
+--------
+    molecule:
+        <rdkit.Chem.rdchem.Mol object at 0x7f1685386f80>
+--------
+    xtb_path_coords:
+        ./p97/xtb_rxn/xtbpath.xyz
+--------
+98:
+--------
+    Error:
+        Mass of fragment is less than 3 g/mol
+--------
+    Exclude:
+        True
+--------
+    f_charge:
+        ./MSDIR/Pair_98/charges
+--------
+    f_coord:
+        ./p98/pair.xyz
+--------
+    f_mass1:
+        ./p98f1/mass
+--------
+    f_mass2:
+        ./p98f2/mass
+--------
+    f_xtb_rxn:
+        ./p98/xtb_rxn/O_Output_21925175.out
+--------
+    mass0:
+        194.19091738
+--------
+    mass1:
+        1.00794075
+--------
+    molecule:
+        <rdkit.Chem.rdchem.Mol object at 0x7f1685387220>
+--------
+    xtb_path_coords:
+        ./p98/xtb_rxn/xtbpath.xyz
+--------
+104:
+--------
+    Exclude:
+        False
+--------
+    bonds:
+        <rdkit.Chem._GetBondsIterator object at 0x7f167c985e20>
+--------
+    charge0:
+        0.23812657999999998
+--------
+    charge1:
+        0.76187342
+--------
+    charges:
+        [-0.08164583, 0.04926276, 0.09512224, -0.22741394, 0.11244264, -0.00942684, 0.27494362, -0.32843426, -0.07335274, -0.06401227, 0.31694899, -0.33141886, -0.00480704, 6.418e-05, 0.10770388, 0.10347901, 0.12193077, 0.10858952, 0.12163587, 0.10665683, 0.1079442, 0.14341151, 0.07727185, 0.15096849, 0.12213542]
+--------
+    f_charge:
+        ./MSDIR/Pair_104/charges
+--------
+    f_coord:
+        ./p104/pair.xyz
+--------
+    f_mass1:
+        ./p104f1/mass
+--------
+    f_mass2:
+        ./p104f2/mass
+--------
+    f_xtb_rxn:
+        ./p104/xtb_rxn/O_Output_21925134.out
+--------
+    fragment1_ids:
+        [(0, 14, 15, 17)]
+--------
+    fragment2_ids:
+        [(1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 16, 18, 19, 20, 21, 22, 23, 24)]
+--------
+    mass0:
+        15.03455815
+--------
+    mass1:
+        180.16429998
+--------
+    molecule:
+        <rdkit.Chem.rdchem.Mol object at 0x7f16853877d0>
+--------
+    rate_const:
+        4.2195556466459966e-63
+--------
+    rmsd_drug_fragments:
+        1.858
+--------
+    transition_energy:
+        85.047
+--------
+    transition_path:
+        [-5.839, -3.354, 0.961, 7.243, 14.937, 24.354, 35.596, 48.217, 56.231, 57.677, 57.936, 57.825, 57.214, 57.816, 60.573, 66.196, 79.208, 70.24, 62.733, 58.216, 55.745, 54.63, 54.313]
+--------
+    xtb_path_coords:
+        ./p104/xtb_rxn/xtbpath.xyz
+--------
+110:
+--------
+    Error:
+        Mass of fragment is less than 3 g/mol
+--------
+    Exclude:
+        True
+--------
+    f_charge:
+        ./MSDIR/Pair_110/charges
+--------
+    f_coord:
+        ./p110/pair.xyz
+--------
+    f_mass1:
+        ./p110f1/mass
+--------
+    f_mass2:
+        ./p110f2/mass
+--------
+    f_xtb_rxn:
+        ./p110/xtb_rxn/O_Output_21925135.out
+--------
+    mass0:
+        194.19091738
+--------
+    mass1:
+        1.00794075
+--------
+    molecule:
+        <rdkit.Chem.rdchem.Mol object at 0x7f1685387290>
+--------
+    xtb_path_coords:
+        ./p110/xtb_rxn/xtbpath.xyz
+--------
+111:
+--------
+    Error:
+        Mass of fragment is less than 3 g/mol
+--------
+    Exclude:
+        True
+--------
+    f_charge:
+        ./MSDIR/Pair_111/charges
+--------
+    f_coord:
+        ./p111/pair.xyz
+--------
+    f_mass1:
+        ./p111f1/mass
+--------
+    f_mass2:
+        ./p111f2/mass
+--------
+    f_xtb_rxn:
+        ./p111/xtb_rxn/O_Output_21925136.out
+--------
+    mass0:
+        194.19091738
+--------
+    mass1:
+        1.00794075
+--------
+    molecule:
+        <rdkit.Chem.rdchem.Mol object at 0x7f1685387990>
+--------
+    xtb_path_coords:
+        ./p111/xtb_rxn/xtbpath.xyz
+--------
+113:
+--------
+    Error:
+        No charges file found, not converged in CREST
+--------
+    Exclude:
+        True
+--------
+    f_coord:
+        ./p113/pair.xyz
+--------
+    f_mass1:
+        ./p113f1/mass
+--------
+    f_mass2:
+        ./p113f2/mass
+--------
+    f_xtb_rxn:
+        ./p113/xtb_rxn/O_Output_21925137.out
+--------
+    xtb_path_coords:
+        ./p113/xtb_rxn/xtbpath.xyz
+--------
+118:
+--------
+    Exclude:
+        False
+--------
+    bonds:
+        <rdkit.Chem._GetBondsIterator object at 0x7f167c986ab0>
+--------
+    charge0:
+        1.0131070699999998
+--------
+    charge1:
+        -0.013107059999999948
+--------
+    charges:
+        [-0.01733426, 0.10274224, -0.02124991, -0.2880778, 0.16465841, 0.03767095, 0.26757783, -0.33802024, -0.06617565, -0.06262591, 0.32278324, -0.3358903, -0.0699792, -0.06406567, 0.1296768, 0.13031872, 0.12879091, 0.12793061, 0.11793538, 0.11207224, 0.11188834, 0.0924693, 0.09248861, 0.12330665, 0.20110872]
+--------
+    f_charge:
+        ./MSDIR/Pair_118/charges
+--------
+    f_coord:
+        ./p118/pair.xyz
+--------
+    f_mass1:
+        ./p118f1/mass
+--------
+    f_mass2:
+        ./p118f2/mass
+--------
+    f_xtb_rxn:
+        ./p118/xtb_rxn/O_Output_21925138.out
+--------
+    fragment1_ids:
+        [(0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24)]
+--------
+    fragment2_ids:
+        [(10, 11)]
+--------
+    mass0:
+        167.18871731
+--------
+    mass1:
+        28.01014082
+--------
+    molecule:
+        <rdkit.Chem.rdchem.Mol object at 0x7f1685387a70>
+--------
+    rate_const:
+        1.3569588213942795e-82
+--------
+    rmsd_drug_fragments:
+        1.114
+--------
+    transition_energy:
+        111.625
+--------
+    transition_path:
+        [-5.528, -2.703, 1.982, 7.928, 15.762, 26.404, 42.76, 80.476, 100.747, 105.68, 106.097, 106.074, 105.918, 105.649, 105.46, 105.111, 104.728, 104.61, 104.186, 104.028, 103.89, 103.447, 103.246, 103.354]
+--------
+    xtb_path_coords:
+        ./p118/xtb_rxn/xtbpath.xyz
+--------
+119:
+--------
+    Exclude:
+        False
+--------
+    bonds:
+        <rdkit.Chem._GetBondsIterator object at 0x7f167c7ec920>
+--------
+    charge0:
+        1.01223812
+--------
+    charge1:
+        -0.012238130000000014
+--------
+    charges:
+        [-0.05432276, -0.11409303, 0.03478206, -0.06184994, 0.1375996, 0.05116271, 0.26919215, -0.32237469, -0.0665352, -0.06289006, 0.31992771, -0.33216584, -0.02326885, -0.07755023, 0.12525956, 0.12745652, 0.13132631, 0.11359782, 0.11520745, 0.10714622, 0.10829981, 0.10044877, 0.10629219, 0.12866757, 0.13868414]
+--------
+    f_charge:
+        ./MSDIR/Pair_119/charges
+--------
+    f_coord:
+        ./p119/pair.xyz
+--------
+    f_mass1:
+        ./p119f1/mass
+--------
+    f_mass2:
+        ./p119f2/mass
+--------
+    f_xtb_rxn:
+        ./p119/xtb_rxn/O_Output_21925139.out
+--------
+    fragment1_ids:
+        [(0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24)]
+--------
+    fragment2_ids:
+        [(10, 11)]
+--------
+    mass0:
+        167.18871731
+--------
+    mass1:
+        28.01014082
+--------
+    molecule:
+        <rdkit.Chem.rdchem.Mol object at 0x7f1685387840>
+--------
+    rate_const:
+        8.118896164264398e-93
+--------
+    rmsd_drug_fragments:
+        1.119
+--------
+    transition_energy:
+        125.564
+--------
+    transition_path:
+        [-5.463, -2.285, 2.917, 10.374, 20.744, 36.766, 57.819, 75.633, 82.341, 84.43, 87.618, 120.101, 117.098, 114.545, 111.787, 109.26, 107.382, 105.455, 104.074, 103.414, 103.227, 102.985, 103.046]
+--------
+    xtb_path_coords:
+        ./p119/xtb_rxn/xtbpath.xyz
+--------
+122:
+--------
+    Error:
+        No charges file found, not converged in CREST
+--------
+    Exclude:
+        True
+--------
+    f_coord:
+        ./p122/pair.xyz
+--------
+    f_mass1:
+        ./p122f1/mass
+--------
+    f_mass2:
+        ./p122f2/mass
+--------
+    f_xtb_rxn:
+        ./p122/xtb_rxn/O_Output_21925140.out
+--------
+    xtb_path_coords:
+        ./p122/xtb_rxn/xtbpath.xyz
+--------
+123:
+--------
+    Error:
+        No charges file found, not converged in CREST
+--------
+    Exclude:
+        True
+--------
+    f_coord:
+        ./p123/pair.xyz
+--------
+    f_mass1:
+        ./p123f1/mass
+--------
+    f_mass2:
+        ./p123f2/mass
+--------
+    f_xtb_rxn:
+        ./p123/xtb_rxn/O_Output_21925141.out
+--------
+    xtb_path_coords:
+        ./p123/xtb_rxn/xtbpath.xyz
+--------
+126:
+--------
+    Exclude:
+        False
+--------
+    bonds:
+        <rdkit.Chem._GetBondsIterator object at 0x7f167c8b7110>
+--------
+    charge0:
+        0.73812996
+--------
+    charge1:
+        0.26187003999999997
+--------
+    charges:
+        [-0.09426142, 0.0617035, 0.05237004, -0.13277266, 0.09604423, -0.05232936, 0.25085532, -0.37905503, -0.08157827, -0.05824112, 0.30474497, -0.34034206, 0.06169298, -0.03295041, 0.10152132, 0.09997183, 0.13358326, 0.10952817, 0.11643086, 0.09502015, 0.09496618, 0.12474423, 0.11527854, 0.13167636, 0.22139839]
+--------
+    f_charge:
+        ./MSDIR/Pair_126/charges
+--------
+    f_coord:
+        ./p126/pair.xyz
+--------
+    f_mass1:
+        ./p126f1/mass
+--------
+    f_mass2:
+        ./p126f2/mass
+--------
+    f_xtb_rxn:
+        ./p126/xtb_rxn/O_Output_21925142.out
+--------
+    fragment1_ids:
+        [(0, 1, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 16, 18, 19, 20, 21, 22, 23, 24)]
+--------
+    fragment2_ids:
+        [(2, 15, 17)]
+--------
+    mass0:
+        181.17224073
+--------
+    mass1:
+        14.0266174
+--------
+    molecule:
+        <rdkit.Chem.rdchem.Mol object at 0x7f1685386ff0>
+--------
+    rate_const:
+        3.0947558601674183e-134
+--------
+    rmsd_drug_fragments:
+        1.847
+--------
+    transition_energy:
+        182.038
+--------
+    transition_path:
+        [-5.632, -2.034, 4.631, 14.799, 27.549, 43.53, 64.623, 176.406, 171.549, 165.698, 162.071, 158.489, 154.401, 151.788, 149.45, 146.991, 144.039, 141.829, 140.841, 140.528, 140.687, 140.535, 141.872]
+--------
+    xtb_path_coords:
+        ./p126/xtb_rxn/xtbpath.xyz
+--------

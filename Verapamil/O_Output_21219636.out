@@ -1,0 +1,1039 @@
+# User .bashrc file.						UNI-C 25/07-96
+#
+# GNU Bourne Again SHell (bash) initialization.
+# You are expected to edit this file to meet your own needs.
+#
+# The commands in this file are executed
+# each time a new bash shell is started.
+#
+
+# Source the shared .bashrc file if it exists.
+if [ -r /.bashrc ] ; then . /.bashrc ; fi
+
+# Place your own code within the if-fi below to
+# avoid it being executed on logins via remote shell,
+# remote exec, batch jobs and other non-interactive logins.
+
+# Set up the bash environment if interactive login.
+if tty -s ; then
+
+  # Set the system prompt.
+  PS1="\w\n\h(\u) $ "
+  export PS1
+
+  # Set up some user command aliases.
+  alias h=history
+  alias source=.
+
+  # Confirm before removing, replacing or overwriting files.
+  alias rm="rm -i"
+  alias mv="mv -i"
+  alias cp="cp -i"
+
+# source $HOME/anaconda3/bin/activate  # commented out by conda initialize
+fi
+
+# Place your own code within the if-fi above to
+# avoid it being executed on logins via remote shell,
+# remote exec, batch jobs and other non-interactive logins.
+
+export PATH=$PATH:/appl/steno/sw/apps/vmd/1.9.3/bin
+
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+__conda_setup="$('/zhome/92/7/155378/miniforge3/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    eval "$__conda_setup"
+else
+    if [ -f "/zhome/92/7/155378/miniforge3/etc/profile.d/conda.sh" ]; then
+        . "/zhome/92/7/155378/miniforge3/etc/profile.d/conda.sh"
+    else
+        export PATH="/zhome/92/7/155378/miniforge3/bin:$PATH"
+    fi
+fi
+unset __conda_setup
+
+if [ -f "/zhome/92/7/155378/miniforge3/etc/profile.d/mamba.sh" ]; then
+    . "/zhome/92/7/155378/miniforge3/etc/profile.d/mamba.sh"
+fi
+# <<< conda initialize <<<
+export PATH="/zhome/92/7/155378/Desktop/crest/crest":$PATH
+ 
+       ╔════════════════════════════════════════════╗
+       ║            ___ ___ ___ ___ _____           ║
+       ║           / __| _ \ __/ __|_   _|          ║
+       ║          | (__|   / _|\__ \ | |            ║
+       ║           \___|_|_\___|___/ |_|            ║
+       ║                                            ║
+       ║  Conformer-Rotamer Ensemble Sampling Tool  ║
+       ║          based on the xTB methods          ║
+       ║                                            ║
+       ╚════════════════════════════════════════════╝
+       Version 3.0pre, Tue Mar 19 17:27:08 UTC 2024
+       commit (2719412) compiled by 'runner@fv-az1103-331'
+ 
+   Cite work conducted with this code as
+
+   • P.Pracht, F.Bohle, S.Grimme, PCCP, 2020, 22, 7169-7192.
+   • S.Grimme, JCTC, 2019, 15, 2847-2862.
+
+   for works involving QCG cite
+
+   • S.Spicher, C.Plett, P.Pracht, A.Hansen, S.Grimme,
+     JCTC, 2022, 18 (5), 3174-3189.
+   • C.Plett, S. Grimme,
+     Angew. Chem. Int. Ed. 2023, 62, e202214477.
+
+   for works involving MECP screening cite
+
+   • P.Pracht, C.Bannwarth, JCTC, 2022, 18 (10), 6370-6385.
+ 
+   Original code
+     P.Pracht, S.Grimme, Universität Bonn, MCTC
+   with help from (alphabetical order):
+     C.Bannwarth, F.Bohle, S.Ehlert, G.Feldmann, J.Gorges,
+     S.Grimme, C.Plett, P.Pracht, S.Spicher, P.Steinbach,
+     P.Wesolowski, F.Zeller
+ 
+   Online documentation is available at
+   https://crest-lab.github.io/crest-docs/
+ 
+   This program is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+   GNU Lesser General Public License (LGPL) for more details.
+
+ Command line input:
+ $ /zhome/92/7/155378/miniforge3/envs/crest_env/bin/crest /work3/ishof/SK/CREST/verapamil_3_1.xyz -msreact --msmolbar --mslargeprint --T 16 --chrg 1
+
+  --T 16 (CPUs/Threads selected)
+  --chrg 1
+
+> Setting up backup calculator ... done.
+ ----------------
+ Calculation info
+ ----------------
+> User-defined calculation level:
+ : xTB calculation via tblite lib
+ : GFN2-xTB level
+ :   Molecular charge    : 1
+ :   Fermi temperature   : 300.00000
+ :   Accuracy            : 1.00000
+ :   max SCC cycles      : 500
+ :   Weight              : 1.00000
+ 
+ 
+  ========================================
+  |                                      |
+  |               MSREACT                |
+  | automated MS fragment generator      |
+  |                                      |
+  |       University of Bonn, MCTC       |
+  ========================================
+   S. Grimme, P. Pracht, J. Gorges.
+ 
+   Cite work conducted with this code as
+
+   Philipp Pracht, Stefan Grimme, Christoph Bannwarth, Fabian Bohle, Sebastian Ehlert, Gereon Feldmann,
+   Johannes Gorges, Marcel Müller, Tim Neudecker, Christoph Plett, Sebastian Spicher, Pit Steinbach,
+   Patryk A. Wesolowski, and Felix Zeller J. Chem. Phys., 2024, submitted.
+ 
+ 
+ -------------------------
+ xTB Geometry Optimization
+ -------------------------
+ Input energy successfully calculated.
+ msinput is:,
+ 
+ LMO calculation ... done.
+Protonation sites at atom positions:   17   16    1    2    7   10   24   27   22   23   13    4   12    9    5    6   29   26   20   21
+ Add attractive potential for H-shifts:
+ # of distortions         483
+ 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 64 65 66 67 68 69 70 71 72 73 74 75 76 77 78 79 80 81 82 83 84 85 86 87 88 89 90 91 92 93 94 95 96 97 98 99 100 101 102 103 104 105 106 107 108 109 110 111 112 113 114 115 116 117 118 119 120 121 122 123 124 125 126 127 128 129 130 131 132 133 134 135 136 137 138 139 140 141 142 143 144 145 146 147 148 149 150 151 152 153 154 155 156 157 158 159 160 161 162 163 164 165 166 167 168 169 170 171 172 173 174 175 176 177 178 179 180 181 182 183 184 185 186 187 188 189 190 191 192 193 194 195 196 197 198 199 200 201 202 203 204 205 206 207 208 209 210 211 212 213 214 215 216 217 218 219 220 221 222 223 224 225 226 227 228 229 230 231 232 233 234 235 236 237 238 239 240 241 242 243 244 245 246 247 248 249 250 251 252 253 254 255 256 257 258 259 260 261 262 263 264 265 266 267 268 269 270 271 272 273 274 275 276 277 278 279 280 281 282 283 284 285 286 287 288 289 290 291 292 293 294 295 296 297 298 299 300 301 302 303 304 305 306 307 308 309 310 311 312 313 314 315 316 317 318 319 320 321 322 323 324 325 326 327 328 329 330 331 332 333 334 335 336 337 338 339 340 341 342 343 344 345 346 347 348 349 350 351 352 353 354 355 356 357 358 359 360 361 362 363 364 365 366 367 368 369 370 371 372 373 374 375 376 377 378 379 380 381 382 383 384 385 386 387 388 389 390 391 392 393 394 395 396 397 398 399 400 401 402 403 404 405 406 407 408 409 410 411 412 413 414 415 416 417 418 419 420 421 422 423 424 425 426 427 428 429 430 431 432 433 434 435 436 437 438 439 440 441 442 443 444 445 446 447 448 449 450 451 452 453 454 455 456 457 458 459 460 461 462 463 464 465 466 467 468 469 470 471 472 473 474 475 476 477 478 479 480 481 482 483 
+ done.
+ All structures written to file <crest_allproducts.xyz>
+ Detect fragments
+removed multiple fragmented structures:  13 27 30 51 55 57 83 109 124 129 130 130 171 182 182 188
+ Remaining structures:         462
+    binary: "molbar"
+    status: not found!
+ molbar not found, no topology check for duplicated structures possible
+Calling CREGEN routine and sort out structures above energy window of  200.0000 kcal/mol
+ All unique structures written to file <crest_unique_products.xyz>
+CREGEN> running RMSDs ... done.
+ reading product structures file crest_msreact_products.xyz
+ Remaining structures after cregen:         428
+ Detect fragments
+ writing isomers to <isomers.xyz> and fragmentpairs to <fragmentpairs.xyz
+ writing products to <crest_msreact_products.xyz>
+ writing product structures and molecular masses to directories
+========================================================
+ number of printed structures: 428
+  directory | fragment type | rel. energy [kcal/mol]
+  fragmentpair: | sumformula | molecular mass
+  p1              isomer      -50.64614748
+  p2              isomer      -45.59676699
+  p3              isomer      -40.44345211
+  p4              isomer      -39.06829647
+  p5              isomer      -38.95946751
+  p6              isomer      -38.66859804
+  p7              isomer      -34.52690373
+  p8              isomer      -34.39608056
+  p9              isomer      -34.32941395
+ p10              isomer      -32.50236991
+ p11              isomer      -32.08739162
+ p12              isomer      -29.83842277
+ p13              isomer      -26.76602343
+ p14              isomer      -22.74815557
+ p15              isomer      -21.36580867
+ p16        fragmentpair      -20.40346014
+  p16f1               H29C19N2O2         317.44648
+  p16f2                  H10C8O2         138.16410
+ p17              isomer      -20.37765068
+ p18        fragmentpair      -20.17757556
+  p18f1               H29C19N2O2         317.44648
+  p18f2                  H10C8O2         138.16410
+ p19              isomer      -15.96295837
+ p20              isomer      -14.97191384
+ p21              isomer      -14.95938875
+ p22              isomer      -14.56989989
+ p23              isomer      -14.52655781
+ p24              isomer      -13.96712057
+ p25              isomer      -13.96222599
+ p26              isomer      -12.82412461
+ p27              isomer      -12.66255974
+ p28              isomer      -12.52041630
+ p29              isomer      -12.51869065
+ p30              isomer      -12.48261513
+ p31              isomer      -12.30075033
+ p32              isomer      -11.72506686
+ p33              isomer      -11.46197724
+ p34              isomer      -10.71493976
+ p35              isomer      -10.36478948
+ p36              isomer      -10.04323480
+ p37              isomer       -7.70392968
+ p38              isomer       -7.28402544
+ p39              isomer       -6.11863367
+ p40        fragmentpair       -5.13288531
+  p40f1               H37C27N2O4         453.59470
+  p40f2                       H2           2.01588
+ p41        fragmentpair       -3.81551702
+  p41f1               H37C27N2O4         453.59470
+  p41f2                       H2           2.01588
+ p42        fragmentpair       -3.57619746
+  p42f1               H37C27N2O4         453.59470
+  p42f2                       H2           2.01588
+ p43        fragmentpair       -3.25211391
+  p43f1               H37C27N2O4         453.59470
+  p43f2                       H2           2.01588
+ p44              isomer       -2.84167879
+ p45              isomer       -2.77183699
+ p46              isomer       -2.17752904
+ p47              isomer       -2.10473166
+ p48              isomer       -1.92511335
+ p49              isomer       -1.86288951
+ p50        fragmentpair       -1.61717563
+  p50f1               H38C27N2O4         454.60264
+  p50f2                       H1           1.00794
+ p51              isomer       -1.47160598
+ p52              isomer       -1.33826022
+ p53              isomer       -1.24349374
+ p54              isomer       -0.99620480
+ p55              isomer       -0.84889695
+ p56        fragmentpair       -0.69710869
+  p56f1               H23C16N1O2         261.35992
+  p56f2               H16C11N1O2         194.25066
+ p57              isomer       -0.49571580
+ p58              isomer       -0.31852595
+ p59              isomer        0.94770660
+ p60              isomer        1.14898654
+ p61              isomer        1.45096292
+ p62              isomer        1.67808997
+ p63              isomer        1.89192010
+ p64              isomer        2.57973324
+ p65              isomer        3.06521849
+ p66              isomer        3.39043783
+ p67        fragmentpair        3.50869199
+  p67f1               H33C24N2O4         413.53073
+  p67f2                     H6C3          42.07985
+ p68        fragmentpair        3.62539620
+  p68f1               H33C24N2O4         413.53073
+  p68f2                     H6C3          42.07985
+ p69        fragmentpair        3.83659706
+  p69f1               H33C24N2O4         413.53073
+  p69f2                     H6C3          42.07985
+ p70        fragmentpair        4.52594760
+  p70f1               H33C24N2O4         413.53073
+  p70f2                     H6C3          42.07985
+ p71              isomer        4.71362313
+ p72              isomer        5.16917618
+ p73              isomer        5.72586494
+ p74              isomer        6.01087974
+ p75              isomer        6.11485179
+ p76        fragmentpair        6.46215318
+  p76f1               H29C19N2O2         317.44648
+  p76f2                  H10C8O2         138.16410
+ p77              isomer        7.07968525
+ p78        fragmentpair        7.46635659
+  p78f1               H38C27N2O4         454.60264
+  p78f2                       H1           1.00794
+ p79              isomer        7.63873344
+ p80              isomer        7.91415990
+ p81        fragmentpair        8.18317949
+  p81f1               H37C27N2O4         453.59470
+  p81f2                       H2           2.01588
+ p82              isomer        9.15785858
+ p83        fragmentpair        9.34449872
+  p83f1               H18C13N1O2         220.28801
+  p83f2               H21C14N1O2         235.32257
+ p84              isomer        9.35881849
+ p85              isomer        9.37113023
+ p86        fragmentpair        9.89533909
+  p86f1               H29C19N2O2         317.44648
+  p86f2                  H10C8O2         138.16410
+ p87        fragmentpair       10.27650717
+  p87f1               H29C19N2O2         317.44648
+  p87f2                  H10C8O2         138.16410
+ p88              isomer       10.37350758
+ p89        fragmentpair       10.41531227
+  p89f1               H29C19N2O2         317.44648
+  p89f2                  H10C8O2         138.16410
+ p90        fragmentpair       10.51565731
+  p90f1               H29C19N2O2         317.44648
+  p90f2                  H10C8O2         138.16410
+ p91              isomer       10.90420490
+ p92              isomer       11.22670712
+ p93              isomer       11.48930728
+ p94        fragmentpair       11.60386541
+  p94f1               H29C19N2O2         317.44648
+  p94f2                  H10C8O2         138.16410
+ p95              isomer       12.24835529
+ p96              isomer       12.50163067
+ p97              isomer       12.59531156
+ p98        fragmentpair       12.60751661
+  p98f1               H37C26N2O3         425.58456
+  p98f2                   H2C1O1          30.02602
+ p99              isomer       12.76834102
+p100        fragmentpair       12.98976401
+ p100f1               H37C26N2O3         425.58456
+ p100f2                   H2C1O1          30.02602
+p101              isomer       13.05740326
+p102              isomer       13.21945758
+p103        fragmentpair       13.28050798
+ p103f1               H37C26N2O3         425.58456
+ p103f2                   H2C1O1          30.02602
+p104              isomer       13.57135234
+p105              isomer       13.69627065
+p106              isomer       13.70178646
+p107              isomer       14.16690903
+p108        fragmentpair       14.34948919
+ p108f1               H37C27N2O4         453.59470
+ p108f2                       H2           2.01588
+p109        fragmentpair       14.47028476
+ p109f1               H37C26N2O3         425.58456
+ p109f2                   H2C1O1          30.02602
+p110              isomer       14.62920781
+p111        fragmentpair       14.64312597
+ p111f1               H37C26N2O3         425.58456
+ p111f2                   H2C1O1          30.02602
+p112        fragmentpair       15.96645560
+ p112f1               H37C26N2O3         425.58456
+ p112f2                   H2C1O1          30.02602
+p113              isomer       16.11335557
+p114              isomer       16.11362540
+p115              isomer       16.25878089
+p116        fragmentpair       16.56026154
+ p116f1               H37C26N2O3         425.58456
+ p116f2                   H2C1O1          30.02602
+p117        fragmentpair       16.89933001
+ p117f1               H37C26N2O3         425.58456
+ p117f2                   H2C1O1          30.02602
+p118        fragmentpair       17.31929700
+ p118f1               H37C27N2O4         453.59470
+ p118f2                       H2           2.01588
+p119        fragmentpair       17.59824379
+ p119f1               H37C26N2O3         425.58456
+ p119f2                   H2C1O1          30.02602
+p120        fragmentpair       17.64251458
+ p120f1               H37C27N2O4         453.59470
+ p120f2                       H2           2.01588
+p121        fragmentpair       17.74540104
+ p121f1               H37C26N2O3         425.58456
+ p121f2                   H2C1O1          30.02602
+p122        fragmentpair       17.78394894
+ p122f1               H37C26N2O3         425.58456
+ p122f2                   H2C1O1          30.02602
+p123        fragmentpair       17.85129954
+ p123f1               H37C26N2O3         425.58456
+ p123f2                   H2C1O1          30.02602
+p124              isomer       17.92762979
+p125        fragmentpair       17.93844805
+ p125f1               H37C27N2O4         453.59470
+ p125f2                       H2           2.01588
+p126              isomer       17.98888099
+p127        fragmentpair       18.15137457
+ p127f1               H37C26N2O3         425.58456
+ p127f2                   H2C1O1          30.02602
+p128        fragmentpair       18.17380803
+ p128f1               H37C26N2O3         425.58456
+ p128f2                   H2C1O1          30.02602
+p129        fragmentpair       18.19861348
+ p129f1               H37C26N2O3         425.58456
+ p129f2                   H2C1O1          30.02602
+p130              isomer       18.22497515
+p131        fragmentpair       18.27984458
+ p131f1               H37C26N2O3         425.58456
+ p131f2                   H2C1O1          30.02602
+p132              isomer       18.29547584
+p133              isomer       18.33168941
+p134        fragmentpair       18.62432846
+ p134f1               H37C26N2O3         425.58456
+ p134f2                   H2C1O1          30.02602
+p135        fragmentpair       18.80582930
+ p135f1               H37C26N2O3         425.58456
+ p135f2                   H2C1O1          30.02602
+p136        fragmentpair       18.90811962
+ p136f1               H20C14N1O2         234.31463
+ p136f2               H19C13N1O2         221.29595
+p137        fragmentpair       19.05282330
+ p137f1               H20C14N1O2         234.31463
+ p137f2               H19C13N1O2         221.29595
+p138              isomer       19.06014006
+p139        fragmentpair       19.27546994
+ p139f1               H37C26N2O3         425.58456
+ p139f2                   H2C1O1          30.02602
+p140        fragmentpair       19.52974305
+ p140f1               H20C14N1O2         234.31463
+ p140f2               H19C13N1O2         221.29595
+p141        fragmentpair       19.81696041
+ p141f1               H37C26N2O3         425.58456
+ p141f2                   H2C1O1          30.02602
+p142        fragmentpair       20.34012761
+ p142f1               H26C17N2O2         290.40119
+ p142f2                 H13C10O2         165.20940
+p143        fragmentpair       20.41379095
+ p143f1               H32C24N2O4         412.52279
+ p143f2                     H7C3          43.08779
+p144              isomer       20.45109011
+p145              isomer       20.53074617
+p146        fragmentpair       20.76606849
+ p146f1               H37C26N2O3         425.58456
+ p146f2                   H2C1O1          30.02602
+p147        fragmentpair       20.99787049
+ p147f1               H37C27N2O4         453.59470
+ p147f2                       H2           2.01588
+p148        fragmentpair       21.11333224
+ p148f1               H37C26N2O3         425.58456
+ p148f2                   H2C1O1          30.02602
+p149              isomer       21.82575002
+p150              isomer       22.26114119
+p151              isomer       22.33785423
+p152              isomer       22.69572915
+p153              isomer       23.02994070
+p154        fragmentpair       23.17540995
+ p154f1               H37C27N2O4         453.59470
+ p154f2                       H2           2.01588
+p155              isomer       23.18187329
+p156              isomer       23.45682912
+p157              isomer       23.66216905
+p158              isomer       23.98827944
+p159              isomer       24.00297572
+p160        fragmentpair       24.00981557
+ p160f1               H32C24N2O4         412.52279
+ p160f2                     H7C3          43.08779
+p161        fragmentpair       24.09158005
+ p161f1               H32C24N2O4         412.52279
+ p161f2                     H7C3          43.08779
+p162              isomer       24.10040911
+p163              isomer       24.19334326
+p164              isomer       24.22932466
+p165              isomer       24.26263286
+p166              isomer       24.27870965
+p167              isomer       24.32712201
+p168              isomer       24.42608025
+p169              isomer       24.54398301
+p170        fragmentpair       24.68950873
+ p170f1               H26C17N2O2         290.40119
+ p170f2                 H13C10O2         165.20940
+p171        fragmentpair       24.75666480
+ p171f1               H26C17N2O2         290.40119
+ p171f2                 H13C10O2         165.20940
+p172        fragmentpair       24.95685287
+ p172f1               H26C17N2O2         290.40119
+ p172f2                 H13C10O2         165.20940
+p173              isomer       25.44037402
+p174              isomer       25.57178705
+p175        fragmentpair       25.95673901
+ p175f1               H26C17N2O2         290.40119
+ p175f2                 H13C10O2         165.20940
+p176        fragmentpair       27.26018914
+ p176f1               H38C27N2O4         454.60264
+ p176f2                       H1           1.00794
+p177        fragmentpair       27.26730510
+ p177f1               H38C27N2O4         454.60264
+ p177f2                       H1           1.00794
+p178              isomer       27.87954727
+p179        fragmentpair       28.41004378
+ p179f1               H26C17N2O2         290.40119
+ p179f2                 H13C10O2         165.20940
+p180        fragmentpair       28.55095103
+ p180f1               H17C13N1O2         219.28007
+ p180f2               H22C14N1O2         236.33051
+p181        fragmentpair       28.87925771
+ p181f1               H37C27N2O4         453.59470
+ p181f2                       H2           2.01588
+p182        fragmentpair       28.94368411
+ p182f1               H37C27N2O4         453.59470
+ p182f2                       H2           2.01588
+p183        fragmentpair       29.01953746
+ p183f1               H38C27N2O4         454.60264
+ p183f2                       H1           1.00794
+p184        fragmentpair       29.03244533
+ p184f1               H38C27N2O4         454.60264
+ p184f2                       H1           1.00794
+p185        fragmentpair       29.13056271
+ p185f1               H37C27N2O4         453.59470
+ p185f2                       H2           2.01588
+p186        fragmentpair       29.19989623
+ p186f1               H38C27N2O4         454.60264
+ p186f2                       H1           1.00794
+p187              isomer       29.34530273
+p188        fragmentpair       29.39370253
+ p188f1                   H1C1N1          27.02538
+ p188f2               H38C26N1O4         428.58520
+p189              isomer       29.43294070
+p190              isomer       29.49493863
+p191              isomer       29.57909393
+p192              isomer       29.85349755
+p193              isomer       29.93108282
+p194              isomer       29.95381749
+p195              isomer       30.30893137
+p196              isomer       30.36228851
+p197        fragmentpair       30.38310927
+ p197f1               H38C27N2O4         454.60264
+ p197f2                       H1           1.00794
+p198        fragmentpair       30.43487253
+ p198f1               H37C27N2O4         453.59470
+ p198f2                       H2           2.01588
+p199              isomer       30.46103967
+p200              isomer       30.75443173
+p201        fragmentpair       30.92419814
+ p201f1               H32C24N2O4         412.52279
+ p201f2                     H7C3          43.08779
+p202              isomer       30.97197044
+p203              isomer       31.01486698
+p204        fragmentpair       31.08224268
+ p204f1               H37C27N2O4         453.59470
+ p204f2                       H2           2.01588
+p205              isomer       31.15829055
+p206        fragmentpair       31.25330176
+ p206f1               H37C27N2O4         453.59470
+ p206f2                       H2           2.01588
+p207        fragmentpair       31.25590592
+ p207f1               H32C24N2O4         412.52279
+ p207f2                     H7C3          43.08779
+p208        fragmentpair       31.35355267
+ p208f1               H32C24N2O4         412.52279
+ p208f2                     H7C3          43.08779
+p209              isomer       31.50069109
+p210        fragmentpair       31.78458893
+ p210f1                   H1C1N1          27.02538
+ p210f2               H38C26N1O4         428.58520
+p211        fragmentpair       31.93814050
+ p211f1               H37C27N2O4         453.59470
+ p211f2                       H2           2.01588
+p212        fragmentpair       32.25275492
+ p212f1               H38C27N2O4         454.60264
+ p212f2                       H1           1.00794
+p213        fragmentpair       32.29541929
+ p213f1               H32C24N2O4         412.52279
+ p213f2                     H7C3          43.08779
+p214              isomer       32.40170057
+p215              isomer       32.60252243
+p216              isomer       32.85342582
+p217        fragmentpair       33.08658324
+ p217f1               H32C24N2O4         412.52279
+ p217f2                     H7C3          43.08779
+p218              isomer       33.29314681
+p219              isomer       33.94733171
+p220        fragmentpair       34.15239553
+ p220f1               H19C14N1O2         233.30669
+ p220f2               H20C13N1O2         222.30389
+p221        fragmentpair       34.28611152
+ p221f1               H35C26N2O4         439.56809
+ p221f2                     H4C1          16.04250
+p222              isomer       34.47829257
+p223        fragmentpair       34.62821086
+ p223f1               H20C14N1O2         234.31463
+ p223f2               H19C13N1O2         221.29595
+p224        fragmentpair       34.89981579
+ p224f1               H20C14N1O2         234.31463
+ p224f2               H19C13N1O2         221.29595
+p225        fragmentpair       34.93541440
+ p225f1               H20C14N1O2         234.31463
+ p225f2               H19C13N1O2         221.29595
+p226        fragmentpair       34.98712118
+ p226f1               H20C14N1O2         234.31463
+ p226f2               H19C13N1O2         221.29595
+p227        fragmentpair       35.19446914
+ p227f1               H20C14N1O2         234.31463
+ p227f2               H19C13N1O2         221.29595
+p228              isomer       36.03429644
+p229              isomer       36.26372018
+p230        fragmentpair       36.66063875
+ p230f1               H28C18N2O2         304.42780
+ p230f2                  H11C9O2         151.18278
+p231              isomer       36.73538140
+p232        fragmentpair       36.84690239
+ p232f1               H28C18N2O2         304.42780
+ p232f2                  H11C9O2         151.18278
+p233        fragmentpair       36.85628993
+ p233f1               H28C18N2O2         304.42780
+ p233f2                  H11C9O2         151.18278
+p234        fragmentpair       36.95105641
+ p234f1               H28C18N2O2         304.42780
+ p234f2                  H11C9O2         151.18278
+p235        fragmentpair       37.08039866
+ p235f1               H28C18N2O2         304.42780
+ p235f2                  H11C9O2         151.18278
+p236              isomer       37.22676525
+p237              isomer       37.28642257
+p238        fragmentpair       37.29981362
+ p238f1               H28C18N2O2         304.42780
+ p238f2                  H11C9O2         151.18278
+p239        fragmentpair       37.31410829
+ p239f1               H28C18N2O2         304.42780
+ p239f2                  H11C9O2         151.18278
+p240        fragmentpair       37.37388484
+ p240f1               H28C18N2O2         304.42780
+ p240f2                  H11C9O2         151.18278
+p241        fragmentpair       37.41922868
+ p241f1               H28C18N2O2         304.42780
+ p241f2                  H11C9O2         151.18278
+p242        fragmentpair       37.48991134
+ p242f1               H28C18N2O2         304.42780
+ p242f2                  H11C9O2         151.18278
+p243        fragmentpair       37.62687784
+ p243f1               H38C27N2O4         454.60264
+ p243f2                       H1           1.00794
+p244              isomer       37.85421197
+p245              isomer       37.86459098
+p246        fragmentpair       38.97737863
+ p246f1               H38C27N2O4         454.60264
+ p246f2                       H1           1.00794
+p247        fragmentpair       39.13379164
+ p247f1               H38C27N2O4         454.60264
+ p247f2                       H1           1.00794
+p248        fragmentpair       39.35202061
+ p248f1               H29C19N2O2         317.44648
+ p248f2                  H10C8O2         138.16410
+p249        fragmentpair       39.54935979
+ p249f1               H29C19N2O2         317.44648
+ p249f2                  H10C8O2         138.16410
+p250        fragmentpair       41.91244124
+ p250f1               H18C13N1O2         220.28801
+ p250f2               H21C14N1O2         235.32257
+p251              isomer       42.00499889
+p252              isomer       42.17638428
+p253        fragmentpair       42.83678152
+ p253f1               H18C13N1O2         220.28801
+ p253f2               H21C14N1O2         235.32257
+p254        fragmentpair       42.95985496
+ p254f1               H36C26N2O4         440.57603
+ p254f2                     H3C1          15.03456
+p255              isomer       43.40379281
+p256        fragmentpair       43.44045191
+ p256f1               H18C13N1O2         220.28801
+ p256f2               H21C14N1O2         235.32257
+p257        fragmentpair       43.44326315
+ p257f1               H18C13N1O2         220.28801
+ p257f2               H21C14N1O2         235.32257
+p258              isomer       43.53032382
+p259        fragmentpair       43.58353035
+ p259f1               H18C13N1O2         220.28801
+ p259f2               H21C14N1O2         235.32257
+p260        fragmentpair       43.85337825
+ p260f1               H18C13N1O2         220.28801
+ p260f2               H21C14N1O2         235.32257
+p261        fragmentpair       43.86177432
+ p261f1               H38C27N2O4         454.60264
+ p261f2                       H1           1.00794
+p262              isomer       43.90013398
+p263        fragmentpair       43.94631867
+ p263f1               H18C13N1O2         220.28801
+ p263f2               H21C14N1O2         235.32257
+p264              isomer       44.02582413
+p265        fragmentpair       44.27911205
+ p265f1               H18C13N1O2         220.28801
+ p265f2               H21C14N1O2         235.32257
+p266        fragmentpair       44.28550010
+ p266f1               H36C26N2O4         440.57603
+ p266f2                     H3C1          15.03456
+p267        fragmentpair       44.40229216
+ p267f1               H18C13N1O2         220.28801
+ p267f2               H21C14N1O2         235.32257
+p268              isomer       46.80952518
+p269              isomer       47.40299854
+p270              isomer       47.62129654
+p271        fragmentpair       47.69538030
+ p271f1               H38C27N2O4         454.60264
+ p271f2                       H1           1.00794
+p272              isomer       48.16562335
+p273        fragmentpair       48.27323495
+ p273f1               H38C27N2O4         454.60264
+ p273f2                       H1           1.00794
+p274              isomer       48.29585667
+p275              isomer       49.77722456
+p276              isomer       49.83519389
+p277        fragmentpair       49.97781424
+ p277f1               H38C27N2O4         454.60264
+ p277f2                       H1           1.00794
+p278              isomer       50.09192056
+p279        fragmentpair       50.13467906
+ p279f1                   H2C1N1          28.03332
+ p279f2               H37C26N1O4         427.57726
+p280              isomer       50.23034288
+p281        fragmentpair       50.31925469
+ p281f1               H37C27N2O4         453.59470
+ p281f2                       H2           2.01588
+p282              isomer       50.45448926
+p283              isomer       50.46709593
+p284        fragmentpair       50.55043546
+ p284f1                   H2C1N1          28.03332
+ p284f2               H37C26N1O4         427.57726
+p285              isomer       50.98876338
+p286              isomer       50.99026313
+p287              isomer       51.01455402
+p288              isomer       51.47140602
+p289              isomer       51.56796717
+p290        fragmentpair       52.35241049
+ p290f1                   H2C1N1          28.03332
+ p290f2               H37C26N1O4         427.57726
+p291              isomer       52.71962276
+p292              isomer       52.77286066
+p293        fragmentpair       52.94814289
+ p293f1                   H2C1N1          28.03332
+ p293f2               H37C26N1O4         427.57726
+p294              isomer       52.97139839
+p295              isomer       53.15942533
+p296              isomer       53.77642402
+p297              isomer       54.06014615
+p298              isomer       55.42447725
+p299              isomer       55.79066040
+p300              isomer       55.81498267
+p301              isomer       55.95129655
+p302        fragmentpair       56.45673661
+ p302f1               H38C27N2O4         454.60264
+ p302f2                       H1           1.00794
+p303        fragmentpair       56.48919140
+ p303f1               H38C27N2O4         454.60264
+ p303f2                       H1           1.00794
+p304        fragmentpair       57.17362853
+ p304f1               H38C27N2O4         454.60264
+ p304f2                       H1           1.00794
+p305        fragmentpair       57.18036171
+ p305f1               H38C27N2O4         454.60264
+ p305f2                       H1           1.00794
+p306        fragmentpair       57.43227539
+ p306f1               H36C26N2O4         440.57603
+ p306f2                     H3C1          15.03456
+p307        fragmentpair       57.61485555
+ p307f1               H36C26N2O4         440.57603
+ p307f2                     H3C1          15.03456
+p308        fragmentpair       57.66282237
+ p308f1               H36C26N2O4         440.57603
+ p308f2                     H3C1          15.03456
+p309        fragmentpair       57.66432839
+ p309f1               H36C26N2O4         440.57603
+ p309f2                     H3C1          15.03456
+p310        fragmentpair       57.67911252
+ p310f1               H36C26N2O4         440.57603
+ p310f2                     H3C1          15.03456
+p311        fragmentpair       57.68555076
+ p311f1               H36C26N2O4         440.57603
+ p311f2                     H3C1          15.03456
+p312        fragmentpair       57.90093711
+ p312f1               H36C26N2O4         440.57603
+ p312f2                     H3C1          15.03456
+p313        fragmentpair       57.94402819
+ p313f1               H36C26N2O4         440.57603
+ p313f2                     H3C1          15.03456
+p314        fragmentpair       57.99575380
+ p314f1               H36C26N2O4         440.57603
+ p314f2                     H3C1          15.03456
+p315        fragmentpair       58.17240399
+ p315f1               H36C26N2O4         440.57603
+ p315f2                     H3C1          15.03456
+p316        fragmentpair       58.30485241
+ p316f1               H36C26N2O4         440.57603
+ p316f2                     H3C1          15.03456
+p317              isomer       58.41998158
+p318        fragmentpair       58.46274635
+ p318f1               H38C27N2O4         454.60264
+ p318f2                       H1           1.00794
+p319              isomer       58.51010449
+p320              isomer       58.77579827
+p321        fragmentpair       58.91393821
+ p321f1               H36C26N2O4         440.57603
+ p321f2                     H3C1          15.03456
+p322        fragmentpair       58.92603659
+ p322f1               H36C26N2O4         440.57603
+ p322f2                     H3C1          15.03456
+p323        fragmentpair       58.93010285
+ p323f1               H36C26N2O4         440.57603
+ p323f2                     H3C1          15.03456
+p324        fragmentpair       58.96772205
+ p324f1               H36C26N2O4         440.57603
+ p324f2                     H3C1          15.03456
+p325              isomer       59.11644179
+p326              isomer       59.22503858
+p327              isomer       59.23646553
+p328        fragmentpair       59.43963427
+ p328f1               H36C26N2O4         440.57603
+ p328f2                     H3C1          15.03456
+p329        fragmentpair       59.51388747
+ p329f1               H38C27N2O4         454.60264
+ p329f2                       H1           1.00794
+p330              isomer       60.13304479
+p331              isomer       60.29887044
+p332              isomer       60.47373223
+p333        fragmentpair       60.48631380
+ p333f1               H21C15N1O2         247.33331
+ p333f2               H18C12N1O2         208.27728
+p334        fragmentpair       60.57859534
+ p334f1               H21C15N1O2         247.33331
+ p334f2               H18C12N1O2         208.27728
+p335              isomer       60.64289624
+p336              isomer       61.10782428
+p337              isomer       61.76068514
+p338        fragmentpair       61.95933581
+ p338f1               H38C27N2O4         454.60264
+ p338f2                       H1           1.00794
+p339        fragmentpair       62.15054423
+ p339f1               H38C27N2O4         454.60264
+ p339f2                       H1           1.00794
+p340        fragmentpair       62.26840306
+ p340f1               H38C27N2O4         454.60264
+ p340f2                       H1           1.00794
+p341              isomer       62.31170748
+p342              isomer       62.96058366
+p343              isomer       63.69261111
+p344        fragmentpair       63.82439437
+ p344f1               H36C26N2O4         440.57603
+ p344f2                     H3C1          15.03456
+p345              isomer       64.04955105
+p346              isomer       66.06037378
+p347              isomer       66.26291502
+p348              isomer       66.41277683
+p349              isomer       66.44053157
+p350        fragmentpair       66.76095046
+ p350f1               H38C27N2O4         454.60264
+ p350f2                       H1           1.00794
+p351        fragmentpair       66.91480951
+ p351f1               H38C27N2O4         454.60264
+ p351f2                       H1           1.00794
+p352              isomer       67.09089494
+p353              isomer       67.73742423
+p354        fragmentpair       67.90866529
+ p354f1               H38C27N2O4         454.60264
+ p354f2                       H1           1.00794
+p355              isomer       67.99406933
+p356              isomer       68.32728941
+p357              isomer       69.09224228
+p358        fragmentpair       69.12526183
+ p358f1               H38C27N2O4         454.60264
+ p358f2                       H1           1.00794
+p359        fragmentpair       69.59271874
+ p359f1               H36C26N2O3         424.57662
+ p359f2                   H3C1O1          31.03396
+p360        fragmentpair       69.81966382
+ p360f1               H38C27N2O4         454.60264
+ p360f2                       H1           1.00794
+p361        fragmentpair       69.84938894
+ p361f1               H38C27N2O4         454.60264
+ p361f2                       H1           1.00794
+p362              isomer       69.94950180
+p363        fragmentpair       69.99933860
+ p363f1               H36C26N2O3         424.57662
+ p363f2                   H3C1O1          31.03396
+p364              isomer       70.23104020
+p365              isomer       70.33767289
+p366              isomer       70.36783099
+p367              isomer       71.54218987
+p368              isomer       71.56767931
+p369        fragmentpair       71.72153208
+ p369f1               H36C26N2O3         424.57662
+ p369f2                   H3C1O1          31.03396
+p370        fragmentpair       72.56415808
+ p370f1               H29C19N2O2         317.44648
+ p370f2                  H10C8O2         138.16410
+p371              isomer       72.76384414
+p372              isomer       72.83200422
+p373        fragmentpair       72.95665270
+ p373f1               H38C27N2O4         454.60264
+ p373f2                       H1           1.00794
+p374        fragmentpair       72.96644185
+ p374f1               H38C27N2O4         454.60264
+ p374f2                       H1           1.00794
+p375        fragmentpair       73.16929056
+ p375f1               H38C27N2O4         454.60264
+ p375f2                       H1           1.00794
+p376        fragmentpair       73.21282717
+ p376f1               H38C27N2O4         454.60264
+ p376f2                       H1           1.00794
+p377        fragmentpair       73.27006859
+ p377f1               H38C27N2O4         454.60264
+ p377f2                       H1           1.00794
+p378        fragmentpair       73.30793251
+ p378f1               H38C27N2O4         454.60264
+ p378f2                       H1           1.00794
+p379        fragmentpair       73.48358496
+ p379f1               H38C27N2O4         454.60264
+ p379f2                       H1           1.00794
+p380        fragmentpair       73.60918726
+ p380f1               H38C27N2O4         454.60264
+ p380f2                       H1           1.00794
+p381        fragmentpair       73.65488250
+ p381f1               H38C27N2O4         454.60264
+ p381f2                       H1           1.00794
+p382        fragmentpair       73.72621777
+ p382f1               H38C27N2O4         454.60264
+ p382f2                       H1           1.00794
+p383        fragmentpair       73.76765850
+ p383f1               H38C27N2O4         454.60264
+ p383f2                       H1           1.00794
+p384        fragmentpair       73.85873522
+ p384f1               H38C27N2O4         454.60264
+ p384f2                       H1           1.00794
+p385        fragmentpair       74.16252511
+ p385f1               H38C27N2O4         454.60264
+ p385f2                       H1           1.00794
+p386        fragmentpair       74.28286260
+ p386f1               H38C27N2O4         454.60264
+ p386f2                       H1           1.00794
+p387        fragmentpair       74.43524073
+ p387f1               H38C27N2O4         454.60264
+ p387f2                       H1           1.00794
+p388        fragmentpair       74.50757375
+ p388f1                     H2N1          16.02258
+ p388f2               H37C27N1O4         439.58800
+p389        fragmentpair       74.59954153
+ p389f1               H36C26N2O3         424.57662
+ p389f2                   H3C1O1          31.03396
+p390        fragmentpair       75.90942991
+ p390f1               H36C26N2O3         424.57662
+ p390f2                   H3C1O1          31.03396
+p391        fragmentpair       76.83430358
+ p391f1               H36C26N2O4         440.57603
+ p391f2                     H3C1          15.03456
+p392        fragmentpair       77.18676937
+ p392f1               H36C26N2O4         440.57603
+ p392f2                     H3C1          15.03456
+p393        fragmentpair       77.60533702
+ p393f1               H36C26N2O4         440.57603
+ p393f2                     H3C1          15.03456
+p394        fragmentpair       78.22707340
+ p394f1               H36C26N2O4         440.57603
+ p394f2                     H3C1          15.03456
+p395        fragmentpair       80.16527447
+ p395f1               H36C26N2O3         424.57662
+ p395f2                   H3C1O1          31.03396
+p396        fragmentpair       82.94105008
+ p396f1               H36C26N2O3         424.57662
+ p396f2                   H3C1O1          31.03396
+p397        fragmentpair       83.07597716
+ p397f1               H38C27N2O4         454.60264
+ p397f2                       H1           1.00794
+p398        fragmentpair       83.89007030
+ p398f1               H38C27N2O4         454.60264
+ p398f2                       H1           1.00794
+p399        fragmentpair       84.10883893
+ p399f1               H38C27N2O4         454.60264
+ p399f2                       H1           1.00794
+p400        fragmentpair       84.30595221
+ p400f1               H38C27N2O4         454.60264
+ p400f2                       H1           1.00794
+p401        fragmentpair       84.40001588
+ p401f1               H38C27N2O4         454.60264
+ p401f2                       H1           1.00794
+p402        fragmentpair       85.23670564
+ p402f1               H36C26N2O3         424.57662
+ p402f2                   H3C1O1          31.03396
+p403        fragmentpair       85.26647469
+ p403f1               H38C27N2O4         454.60264
+ p403f2                       H1           1.00794
+p404        fragmentpair       85.58912123
+ p404f1               H38C27N2O4         454.60264
+ p404f2                       H1           1.00794
+p405        fragmentpair       85.64570376
+ p405f1               H38C27N2O4         454.60264
+ p405f2                       H1           1.00794
+p406        fragmentpair       85.66503733
+ p406f1               H30C19N2O2         318.45442
+ p406f2                   H9C8O2         137.15616
+p407        fragmentpair       86.09468052
+ p407f1               H38C27N2O4         454.60264
+ p407f2                       H1           1.00794
+p408        fragmentpair       86.14785567
+ p408f1               H38C27N2O4         454.60264
+ p408f2                       H1           1.00794
+p409        fragmentpair       87.45684043
+ p409f1               H30C19N2O2         318.45442
+ p409f2                   H9C8O2         137.15616
+p410        fragmentpair       87.61530540
+ p410f1               H38C27N2O4         454.60264
+ p410f2                       H1           1.00794
+p411        fragmentpair       87.80022617
+ p411f1               H30C19N2O2         318.45442
+ p411f2                   H9C8O2         137.15616
+p412        fragmentpair       87.83549847
+ p412f1               H30C19N2O2         318.45442
+ p412f2                   H9C8O2         137.15616
+p413        fragmentpair       89.74315865
+ p413f1               H38C27N2O4         454.60264
+ p413f2                       H1           1.00794
+p414              isomer       91.84214019
+p415        fragmentpair       91.89230330
+ p415f1               H30C19N2O2         318.45442
+ p415f2                   H9C8O2         137.15616
+p416        fragmentpair       92.43772198
+ p416f1               H38C27N2O4         454.60264
+ p416f2                       H1           1.00794
+p417        fragmentpair       92.99586656
+ p417f1               H38C27N2O4         454.60264
+ p417f2                       H1           1.00794
+p418        fragmentpair      101.06455281
+ p418f1               H36C25N2O3         412.56589
+ p418f2                   H3C2O1          43.04470
+p419        fragmentpair      102.51855501
+ p419f1               H36C25N2O3         412.56589
+ p419f2                   H3C2O1          43.04470
+p420              isomer      104.88498737
+p421              isomer      105.00031733
+p422              isomer      110.00653144
+p423              isomer      117.82052414
+p424              isomer      123.48410463
+p425              isomer      124.38339473
+p426              isomer      130.09806704
+p427              isomer      131.34270698
+p428              isomer      132.45479182
+========================================================
+ 
+ Number of generated isomers:          219
+ Number of generated fragmentpairs:          209
+ 
+ -----------------
+ Wall Time Summary
+ -----------------
+ CREST runtime (total)               0 d,  0 h,  6 min, 16.336 sec
+ ------------------------------------------------------------------
+ MSREACT                    ...        6 min, 15.538 sec ( 99.788%)
+ I/O and setup              ...        0 min,  0.798 sec (  0.212%)
+ ------------------------------------------------------------------
+ * wall-time:     0 d,  0 h,  6 min, 16.336 sec
+ *  cpu-time:     0 d,  0 h,  4 min, 48.704 sec
+ * ratio c/w:     0.767 speedup
+ ------------------------------------------------------------------
+ * Total number of energy+grad calls: 1
+ 
+ CREST terminated normally.

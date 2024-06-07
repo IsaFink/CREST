@@ -1,0 +1,61 @@
+# User .bashrc file.						UNI-C 25/07-96
+#
+# GNU Bourne Again SHell (bash) initialization.
+# You are expected to edit this file to meet your own needs.
+#
+# The commands in this file are executed
+# each time a new bash shell is started.
+#
+
+# Source the shared .bashrc file if it exists.
+if [ -r /.bashrc ] ; then . /.bashrc ; fi
+
+# Place your own code within the if-fi below to
+# avoid it being executed on logins via remote shell,
+# remote exec, batch jobs and other non-interactive logins.
+
+# Set up the bash environment if interactive login.
+if tty -s ; then
+
+  # Set the system prompt.
+  PS1="\w\n\h(\u) $ "
+  export PS1
+
+  # Set up some user command aliases.
+  alias h=history
+  alias source=.
+
+  # Confirm before removing, replacing or overwriting files.
+  alias rm="rm -i"
+  alias mv="mv -i"
+  alias cp="cp -i"
+
+# source $HOME/anaconda3/bin/activate  # commented out by conda initialize
+fi
+
+# Place your own code within the if-fi above to
+# avoid it being executed on logins via remote shell,
+# remote exec, batch jobs and other non-interactive logins.
+
+export PATH=$PATH:/appl/steno/sw/apps/vmd/1.9.3/bin
+
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+__conda_setup="$('/zhome/92/7/155378/miniforge3/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    eval "$__conda_setup"
+else
+    if [ -f "/zhome/92/7/155378/miniforge3/etc/profile.d/conda.sh" ]; then
+        . "/zhome/92/7/155378/miniforge3/etc/profile.d/conda.sh"
+    else
+        export PATH="/zhome/92/7/155378/miniforge3/bin:$PATH"
+    fi
+fi
+unset __conda_setup
+
+if [ -f "/zhome/92/7/155378/miniforge3/etc/profile.d/mamba.sh" ]; then
+    . "/zhome/92/7/155378/miniforge3/etc/profile.d/mamba.sh"
+fi
+# <<< conda initialize <<<
+export PATH="/zhome/92/7/155378/Desktop/crest/crest":$PATH
+starting parallel xtb runs

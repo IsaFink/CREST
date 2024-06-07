@@ -1,0 +1,2 @@
+/zhome/92/7/155378/.lsbatch/1713892825.21566689.shell: line 64: syntax error near unexpected token `<'
+/zhome/92/7/155378/.lsbatch/1713892825.21566689.shell: line 64: `done < <(find . -type f -name "pair.xyz" -exec dirname {} \; | sort --unique)'

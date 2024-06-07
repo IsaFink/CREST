@@ -1,0 +1,5 @@
+frag_dist 0 
+fc_rep 2.0 
+etemp 5000 
+fc_attr -0.5 
+distthr_attr 4.0

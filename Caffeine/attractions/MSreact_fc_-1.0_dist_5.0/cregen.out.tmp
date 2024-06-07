@@ -1,0 +1,7 @@
+ input  file name : crest_unique_products.xyz
+ output file name : crest_unique_products.sorted
+ number of removed by energy    :     3
+ number of remaining points     :   111
+ reference state Etot :  -42.2479097200000     
+ number of doubles removed by rot/RMSD         :           0
+ total number unique points considered further :         111

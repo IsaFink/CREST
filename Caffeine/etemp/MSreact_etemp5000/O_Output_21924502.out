@@ -1,0 +1,411 @@
+# User .bashrc file.						UNI-C 25/07-96
+#
+# GNU Bourne Again SHell (bash) initialization.
+# You are expected to edit this file to meet your own needs.
+#
+# The commands in this file are executed
+# each time a new bash shell is started.
+#
+
+# Source the shared .bashrc file if it exists.
+if [ -r /.bashrc ] ; then . /.bashrc ; fi
+
+# Place your own code within the if-fi below to
+# avoid it being executed on logins via remote shell,
+# remote exec, batch jobs and other non-interactive logins.
+
+# Set up the bash environment if interactive login.
+if tty -s ; then
+
+  # Set the system prompt.
+  PS1="\w\n\h(\u) $ "
+  export PS1
+
+  # Set up some user command aliases.
+  alias h=history
+  alias source=.
+
+  # Confirm before removing, replacing or overwriting files.
+  alias rm="rm -i"
+  alias mv="mv -i"
+  alias cp="cp -i"
+
+# source $HOME/anaconda3/bin/activate  # commented out by conda initialize
+fi
+
+# Place your own code within the if-fi above to
+# avoid it being executed on logins via remote shell,
+# remote exec, batch jobs and other non-interactive logins.
+
+export PATH=$PATH:/appl/steno/sw/apps/vmd/1.9.3/bin
+
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+__conda_setup="$('/zhome/92/7/155378/miniforge3/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    eval "$__conda_setup"
+else
+    if [ -f "/zhome/92/7/155378/miniforge3/etc/profile.d/conda.sh" ]; then
+        . "/zhome/92/7/155378/miniforge3/etc/profile.d/conda.sh"
+    else
+        export PATH="/zhome/92/7/155378/miniforge3/bin:$PATH"
+    fi
+fi
+unset __conda_setup
+
+if [ -f "/zhome/92/7/155378/miniforge3/etc/profile.d/mamba.sh" ]; then
+    . "/zhome/92/7/155378/miniforge3/etc/profile.d/mamba.sh"
+fi
+# <<< conda initialize <<<
+export PATH="/zhome/92/7/155378/Desktop/crest/crest":$PATH
+ 
+       ╔════════════════════════════════════════════╗
+       ║            ___ ___ ___ ___ _____           ║
+       ║           / __| _ \ __/ __|_   _|          ║
+       ║          | (__|   / _|\__ \ | |            ║
+       ║           \___|_|_\___|___/ |_|            ║
+       ║                                            ║
+       ║  Conformer-Rotamer Ensemble Sampling Tool  ║
+       ║          based on the xTB methods          ║
+       ║                                            ║
+       ╚════════════════════════════════════════════╝
+       Version 3.0pre, Tue Mar 19 17:27:08 UTC 2024
+       commit (2719412) compiled by 'runner@fv-az1103-331'
+ 
+   Cite work conducted with this code as
+
+   • P.Pracht, F.Bohle, S.Grimme, PCCP, 2020, 22, 7169-7192.
+   • S.Grimme, JCTC, 2019, 15, 2847-2862.
+
+   for works involving QCG cite
+
+   • S.Spicher, C.Plett, P.Pracht, A.Hansen, S.Grimme,
+     JCTC, 2022, 18 (5), 3174-3189.
+   • C.Plett, S. Grimme,
+     Angew. Chem. Int. Ed. 2023, 62, e202214477.
+
+   for works involving MECP screening cite
+
+   • P.Pracht, C.Bannwarth, JCTC, 2022, 18 (10), 6370-6385.
+ 
+   Original code
+     P.Pracht, S.Grimme, Universität Bonn, MCTC
+   with help from (alphabetical order):
+     C.Bannwarth, F.Bohle, S.Ehlert, G.Feldmann, J.Gorges,
+     S.Grimme, C.Plett, P.Pracht, S.Spicher, P.Steinbach,
+     P.Wesolowski, F.Zeller
+ 
+   Online documentation is available at
+   https://crest-lab.github.io/crest-docs/
+ 
+   This program is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+   GNU Lesser General Public License (LGPL) for more details.
+
+ Command line input:
+ $ /zhome/92/7/155378/miniforge3/envs/crest_env/bin/crest /work3/ishof/SK/CREST/Caffeine/CaffeineH.xyz -msinput MSinput_etemp_5000 -msreact --msmolbar --mslargeprint --T 16 --chrg 1
+
+  --T 16 (CPUs/Threads selected)
+  --chrg 1
+
+> Setting up backup calculator ... done.
+ ----------------
+ Calculation info
+ ----------------
+> User-defined calculation level:
+ : xTB calculation via tblite lib
+ : GFN2-xTB level
+ :   Molecular charge    : 1
+ :   Fermi temperature   : 300.00000
+ :   Accuracy            : 1.00000
+ :   max SCC cycles      : 500
+ :   Weight              : 1.00000
+ 
+ 
+  ========================================
+  |                                      |
+  |               MSREACT                |
+  | automated MS fragment generator      |
+  |                                      |
+  |       University of Bonn, MCTC       |
+  ========================================
+   S. Grimme, P. Pracht, J. Gorges.
+ 
+   Cite work conducted with this code as
+
+   Philipp Pracht, Stefan Grimme, Christoph Bannwarth, Fabian Bohle, Sebastian Ehlert, Gereon Feldmann,
+   Johannes Gorges, Marcel Müller, Tim Neudecker, Christoph Plett, Sebastian Spicher, Pit Steinbach,
+   Patryk A. Wesolowski, and Felix Zeller J. Chem. Phys., 2024, submitted.
+ 
+ 
+ -------------------------
+ xTB Geometry Optimization
+ -------------------------
+ Input energy successfully calculated.
+ msinput is:,MSinput_etemp_5000
+ Reading <MSinput_etemp_5000> file
+>frag_dist 0                             
+>fc_rep 0.5                              
+>etemp 5000                              
+>fc_attr -0.5                            
+>distthr_attr 4.0                        
+ 
+ LMO calculation ... done.
+Protonation sites at atom positions:    2    3    8    7   12   11    4    6    5
+ Add attractive potential for H-shifts:
+ # of distortions         159
+ 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 64 65 66 67 68 69 70 71 72 73 74 75 76 77 78 79 80 81 82 83 84 85 86 87 88 89 90 91 92 93 94 95 96 97 98 99 100 101 102 103 104 105 106 107 108 109 110 111 112 113 114 115 116 117 118 119 120 121 122 123 124 125 126 127 128 129 130 131 132 133 134 135 136 137 138 139 140 141 142 143 144 145 146 147 148 149 150 151 152 153 154 155 156 157 158 159 
+ done.
+ All structures written to file <crest_allproducts.xyz>
+ Detect fragments
+removed multiple fragmented structures:  41 54 66
+ Remaining structures:         145
+    binary: "molbar"
+    status: not found!
+ molbar not found, no topology check for duplicated structures possible
+Calling CREGEN routine and sort out structures above energy window of  200.0000 kcal/mol
+ All unique structures written to file <crest_unique_products.xyz>
+CREGEN> running RMSDs ... done.
+ reading product structures file crest_msreact_products.xyz
+ Remaining structures after cregen:         124
+ Detect fragments
+ writing isomers to <isomers.xyz> and fragmentpairs to <fragmentpairs.xyz
+ writing products to <crest_msreact_products.xyz>
+ writing product structures and molecular masses to directories
+========================================================
+ number of printed structures: 124
+  directory | fragment type | rel. energy [kcal/mol]
+  fragmentpair: | sumformula | molecular mass
+  p1              isomer       -1.66567024
+  p2              isomer       -1.60159525
+  p3              isomer       -1.36808642
+  p4              isomer        0.46265992
+  p5              isomer        3.20057788
+  p6              isomer       14.17676653
+  p7              isomer       14.44860363
+  p8              isomer       19.72133356
+  p9              isomer       28.97374741
+ p10              isomer       33.32626607
+ p11              isomer       35.70055485
+ p12              isomer       35.76259043
+ p13              isomer       37.85633227
+ p14              isomer       38.57260296
+ p15              isomer       39.39079374
+ p16              isomer       39.70968778
+ p17              isomer       41.99364029
+ p18              isomer       42.77712352
+ p19              isomer       43.55298250
+ p20              isomer       43.87325079
+ p21              isomer       44.32464346
+ p22              isomer       44.41972997
+ p23              isomer       45.47249634
+ p24              isomer       45.56350403
+ p25              isomer       47.20488684
+ p26              isomer       47.68608621
+ p27              isomer       48.50613441
+ p28              isomer       48.94089180
+ p29              isomer       49.25517992
+ p30              isomer       50.72812664
+ p31              isomer       50.79212633
+ p32              isomer       51.47574770
+ p33              isomer       52.77660622
+ p34              isomer       53.67451580
+ p35              isomer       53.85103421
+ p36              isomer       53.97504263
+ p37              isomer       53.97892064
+ p38              isomer       54.21219101
+ p39              isomer       54.27647309
+ p40              isomer       54.54514127
+ p41              isomer       54.71470688
+ p42              isomer       55.00291570
+ p43              isomer       57.20086804
+ p44        fragmentpair       57.67439296
+  p44f1                 H7C7N4O2         179.15636
+  p44f2                     H4C1          16.04250
+ p45              isomer       58.19080816
+ p46              isomer       58.39845104
+ p47              isomer       58.64030575
+ p48              isomer       58.70818345
+ p49              isomer       58.87298626
+ p50        fragmentpair       62.33636165
+  p50f1                 H8C6N3O1         138.14746
+  p50f2                 H3C2N1O1          57.05140
+ p51              isomer       62.52678568
+ p52        fragmentpair       62.86714681
+  p52f1                 H8C6N3O1         138.14746
+  p52f2                 H3C2N1O1          57.05140
+ p53        fragmentpair       62.90507976
+  p53f1                 H8C6N3O1         138.14746
+  p53f2                 H3C2N1O1          57.05140
+ p54              isomer       64.03871955
+ p55              isomer       65.66083782
+ p56              isomer       66.29952324
+ p57              isomer       67.73065899
+ p58              isomer       67.87204315
+ p59        fragmentpair       68.05244585
+  p59f1                 H8C7N4O2         180.16430
+  p59f2                     H3C1          15.03456
+ p60        fragmentpair       68.12071888
+  p60f1                 H8C7N4O2         180.16430
+  p60f2                     H3C1          15.03456
+ p61        fragmentpair       68.38155575
+  p61f1                     H3C1          15.03456
+  p61f2                 H8C7N4O2         180.16430
+ p62        fragmentpair       68.44549269
+  p62f1                     H3C1          15.03456
+  p62f2                 H8C7N4O2         180.16430
+ p63        fragmentpair       68.53859627
+  p63f1                     H3C1          15.03456
+  p63f2                 H8C7N4O2         180.16430
+ p64        fragmentpair       68.63026285
+  p64f1                 H8C7N4O2         180.16430
+  p64f2                     H3C1          15.03456
+ p65        fragmentpair       70.82576163
+  p65f1                H10C8N4O2         194.19092
+  p65f2                       H1           1.00794
+ p66        fragmentpair       70.96606647
+  p66f1                H10C8N4O2         194.19092
+  p66f2                       H1           1.00794
+ p67        fragmentpair       71.04731012
+  p67f1                H10C8N4O2         194.19092
+  p67f2                       H1           1.00794
+ p68        fragmentpair       71.17110519
+  p68f1                H10C8N4O2         194.19092
+  p68f2                       H1           1.00794
+ p69              isomer       72.32894802
+ p70              isomer       73.54205561
+ p71              isomer       74.66029632
+ p72              isomer       76.38453548
+ p73              isomer       78.20408705
+ p74        fragmentpair       78.76477304
+  p74f1                 H8C7N4O2         180.16430
+  p74f2                     H3C1          15.03456
+ p75              isomer       79.27350125
+ p76        fragmentpair       79.35994695
+  p76f1                 H8C7N4O2         180.16430
+  p76f2                     H3C1          15.03456
+ p77              isomer       79.58177155
+ p78        fragmentpair       80.00904903
+  p78f1                 H8C7N4O2         180.16430
+  p78f2                     H3C1          15.03456
+ p79              isomer       82.94468267
+ p80              isomer       84.84881625
+ p81              isomer       85.03456533
+ p82        fragmentpair       85.13488527
+  p82f1                H10C8N4O2         194.19092
+  p82f2                       H1           1.00794
+ p83        fragmentpair       85.73324065
+  p83f1                H10C8N4O2         194.19092
+  p83f2                       H1           1.00794
+ p84        fragmentpair       85.78883799
+  p84f1                H10C8N4O2         194.19092
+  p84f2                       H1           1.00794
+ p85        fragmentpair       85.98231171
+  p85f1                H10C8N4O2         194.19092
+  p85f2                       H1           1.00794
+ p86        fragmentpair       86.09496221
+  p86f1                H10C8N4O2         194.19092
+  p86f2                       H1           1.00794
+ p87        fragmentpair       87.36089355
+  p87f1                H10C8N4O2         194.19092
+  p87f2                       H1           1.00794
+ p88        fragmentpair       87.38046557
+  p88f1                H10C8N4O2         194.19092
+  p88f2                       H1           1.00794
+ p89        fragmentpair       87.84080652
+  p89f1                H10C8N4O2         194.19092
+  p89f2                       H1           1.00794
+ p90        fragmentpair       88.12462906
+  p90f1                 H8C7N4O1         164.16490
+  p90f2                   H3C1O1          31.03396
+ p91        fragmentpair       88.26991005
+  p91f1                H10C8N4O2         194.19092
+  p91f2                       H1           1.00794
+ p92        fragmentpair       88.27579609
+  p92f1                H10C8N4O2         194.19092
+  p92f2                       H1           1.00794
+ p93        fragmentpair       88.45954341
+  p93f1                H10C8N4O2         194.19092
+  p93f2                       H1           1.00794
+ p94        fragmentpair       88.61674709
+  p94f1                H10C8N4O2         194.19092
+  p94f2                       H1           1.00794
+ p95        fragmentpair       88.66027742
+  p95f1                H10C8N4O2         194.19092
+  p95f2                       H1           1.00794
+ p96        fragmentpair       88.91759395
+  p96f1                H10C8N4O2         194.19092
+  p96f2                       H1           1.00794
+ p97        fragmentpair       89.25045636
+  p97f1                H10C8N4O2         194.19092
+  p97f2                       H1           1.00794
+ p98        fragmentpair       89.31857878
+  p98f1                H10C8N4O2         194.19092
+  p98f2                       H1           1.00794
+ p99              isomer       89.60727079
+p100              isomer       92.25065445
+p101              isomer       92.33742019
+p102              isomer       94.67472983
+p103              isomer       94.73444990
+p104              isomer       95.51339624
+p105        fragmentpair       97.18126622
+ p105f1                H10C8N4O2         194.19092
+ p105f2                       H1           1.00794
+p106        fragmentpair       97.30650456
+ p106f1                H10C8N4O2         194.19092
+ p106f2                       H1           1.00794
+p107        fragmentpair       98.42982810
+ p107f1                H10C8N4O2         194.19092
+ p107f2                       H1           1.00794
+p108              isomer      104.02939634
+p109              isomer      104.64628836
+p110        fragmentpair      105.40011549
+ p110f1                   H3C1N1          29.04126
+ p110f2                 H8C7N3O2         166.15760
+p111              isomer      105.73858155
+p112              isomer      112.18385058
+p113        fragmentpair      115.03771347
+ p113f1                     H2C1          14.02662
+ p113f2                 H9C7N4O2         181.17224
+p114              isomer      118.66340046
+p115        fragmentpair      124.87219883
+ p115f1                H11C7N4O1         167.18872
+ p115f2                     C1O1          28.01014
+p116        fragmentpair      125.37275059
+ p116f1                H11C7N4O1         167.18872
+ p116f2                     C1O1          28.01014
+p117              isomer      126.01282280
+p118              isomer      130.33990223
+p119        fragmentpair      132.21880993
+ p119f1                H10C8N4O1         178.19151
+ p119f2                     H1O1          17.00735
+p120        fragmentpair      134.36957982
+ p120f1                H10C8N4O1         178.19151
+ p120f2                     H1O1          17.00735
+p121              isomer      145.68139191
+p122              isomer      145.72537405
+p123              isomer      148.40637690
+p124        fragmentpair      151.87052413
+ p124f1                 H9C7N4O2         181.17224
+ p124f2                     H2C1          14.02662
+========================================================
+ 
+ Number of generated isomers:           80
+ Number of generated fragmentpairs:           44
+ 
+ -----------------
+ Wall Time Summary
+ -----------------
+ CREST runtime (total)               0 d,  0 h,  0 min, 27.740 sec
+ ------------------------------------------------------------------
+ MSREACT                    ...        0 min, 27.636 sec ( 99.624%)
+ I/O and setup              ...        0 min,  0.104 sec (  0.376%)
+ ------------------------------------------------------------------
+ * wall-time:     0 d,  0 h,  0 min, 27.740 sec
+ *  cpu-time:     0 d,  0 h,  0 min, 43.184 sec
+ * ratio c/w:     1.557 speedup
+ ------------------------------------------------------------------
+ * Total number of energy+grad calls: 1
+ 
+ CREST terminated normally.

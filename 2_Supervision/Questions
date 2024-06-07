@@ -1,0 +1,71 @@
+I have energy paths that are increasing all the way. Should I exclude these from the data treatment?
+ --> examples are in Verapamil: 98, 100, 111, 117, 
+    My solution: if max value is within the last 2 points, then I exclude it.
+ Other solution: Could just remove the last two points of the paths, if the new last two points are still a problem, then exclude completely. Check one of the crazy ones using VMD to see if it's just the last trajectory that's fucked due to high energy state. 
+    further work: RMSDs and criteria for them - but add it to the dictionary
+
+Will we have all data twice as there are to plots pr. sim?
+
+I need to delete the xtb output with lowest numbers in each of my folders
+#Tomorrowproblem
+
+Is caffeine too small not to have only a dihydrogen fall off?
+#the pronlem is probably the determine bonds - ask David
+Possible solution:
+    As we don't use the charges in order to find the mZ peaks, should I remove that part?
+    --> Then we will have less errors for caffeine at least --> more peaks.
+Solution:
+    --> #Add a check-in that makes sure the charge of the mmolecule is != 0.
+    #zero --> error
+    #Else, just print charge.
+
+
+
+What package can I use to create the gifs? I might as well do it and it sounds fun and can be used for error looking.
+rdkit - load in the xtb_path files for each of the  sims and thn save each trajectory as a picture - add them all together into a gif. 
+
+
+Energy paths - in one picture - normalize x-axis from 0-1. The same products but the different paths
+Also a plot with all energy paths in order to see if any are causing issues (just to visualize the issues)
+
+Plotting 
+CE --> 1/CE 
+rate constant --> log(rate )
+'Prob_contrib' is probably  the best one. 
+
+Doing 2 plots stacked - one observed and one with experimental values. 
+ --> also no problem with the scale 
+
+Visualize workflow. 
+Lots of pretty pictures - something protonated. 
+Results from different sections
+--> 
+
+Project/workflow
+Background info - motivation
+How is it simulated with MSreact
+pathsampling with xtb.
+Results
+Optimization
+ 
+
+
+
+The beginning of the project:
+    metabolites from the drug+bacteria incubated.
+    WE theoretically get the intensity distributions of fragments. 
+
+    Already a tool that predicts possible metabolites from drug
+    - we get mass of the metabolites
+
+    apply workflow to f.ex two metabolites of same mass, using it to distinguish between them based on their intensity peaks. 
+    The metabolites are also run through tandem MS experimentally, but atm we can't distinguish between them.
+    Classical examples: hydroxylation of anything :)
+                        Vitamin B2 - hydroxylation happens on random aromatic positions. 
+                        diazepan --> oxidized either to 4'-hydroxydiazepan or themazepan (other position to be determined)
+    Metabolites can have different toxicities.
+    Caffeine metabolites --> Show metabolites and compare to my computed results. 
+    Pretty reference: https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Caffeine_metabolites.svg/1200px-Caffeine_metabolites.svg.png
+
+
+#Remember to move gifs to a folder where they are easily accesible.
